@@ -14,17 +14,17 @@
   --accent-light: var(--red-light);
   --accent-dark: var(--red-dark);
   
-  /* Dark Theme */
-  --background: #0a0a0a;
-  --background-secondary: #111111;
-  --background-card: #1a1a1a;
-  --foreground: #ffffff;
-  --foreground-muted: #a1a1a1;
-  --border-color: #2a2a2a;
+  /* Light Theme */
+  --background: #ffffff;
+  --background-secondary: #f8f9fa;
+  --background-card: #ffffff;
+  --foreground: #1a1a1a;
+  --foreground-muted: #6b7280;
+  --border-color: #e5e7eb;
   
   /* Accents - using truck red */
-  --accent-glow: rgba(211, 32, 39, 0.25);
-  --blue-glow: rgba(46, 103, 178, 0.20);
+  --accent-glow: rgba(211, 32, 39, 0.15);
+  --blue-glow: rgba(46, 103, 178, 0.15);
 }
 
 @theme inline {
@@ -223,7 +223,7 @@ body {
 .card:hover {
   border-color: var(--red-primary);
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px var(--accent-glow);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 30px var(--accent-glow);
 }
 
 /* Button Styles */
@@ -248,7 +248,7 @@ body {
 
 .btn-secondary {
   background: transparent;
-  color: white;
+  color: var(--red-primary);
   padding: 16px 32px;
   border-radius: 8px;
   font-weight: 600;
@@ -262,8 +262,9 @@ body {
 
 .btn-secondary:hover {
   background: var(--red-primary);
+  color: white;
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(255, 87, 34, 0.3);
+  box-shadow: 0 10px 30px rgba(211, 32, 39, 0.3);
 }
 
 /* Section Styles */
@@ -314,7 +315,7 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 16px;
-  color: white;
+  color: var(--foreground);
   font-size: 1rem;
   transition: all 0.3s ease;
   width: 100%;
@@ -379,7 +380,7 @@ body {
 }
 
 .nav-link:hover {
-  color: white;
+  color: var(--foreground);
 }
 
 .nav-link::after {

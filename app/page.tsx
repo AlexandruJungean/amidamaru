@@ -29,7 +29,7 @@ function Navigation() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-black/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-zinc-200' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -51,7 +51,9 @@ function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="nav-link text-base font-medium uppercase tracking-wide"
+                className={`text-base font-medium uppercase tracking-wide transition-colors relative py-2 hover:text-[#D32027] ${
+                  isScrolled ? 'text-zinc-600' : 'text-white/90 hover:text-white'
+                }`}
               >
                 {link.label}
               </a>
@@ -61,7 +63,11 @@ function Navigation() {
             <div className="relative">
               <button
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
-                className="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
+                className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors border ${
+                  isScrolled 
+                    ? 'bg-zinc-100 border-zinc-200 text-zinc-900' 
+                    : 'bg-white/10 border-white/20 text-white backdrop-blur-sm'
+                }`}
               >
                 <img 
                   src={`https://flagcdn.com/24x18/${currentLanguageInfo.flag}.png`}
@@ -81,7 +87,7 @@ function Navigation() {
               </button>
 
               {isLangMenuOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-zinc-900 border border-zinc-700 rounded-lg shadow-xl overflow-hidden">
+                <div className="absolute right-0 mt-2 w-48 bg-white border border-zinc-200 rounded-lg shadow-xl overflow-hidden">
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
@@ -89,7 +95,7 @@ function Navigation() {
                         setLanguage(lang.code);
                         setIsLangMenuOpen(false);
                       }}
-                      className={`w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-white/10 transition-colors ${
+                      className={`w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-zinc-100 transition-colors ${
                         language === lang.code ? 'bg-[#D32027]/20 text-[#D32027]' : ''
                       }`}
                     >
@@ -117,7 +123,9 @@ function Navigation() {
             {/* Mobile Language Switcher */}
             <button
               onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
-              className="flex items-center gap-1 px-2 py-1 rounded bg-white/5"
+              className={`flex items-center gap-1 px-2 py-1 rounded ${
+                isScrolled ? 'bg-zinc-100' : 'bg-white/10 backdrop-blur-sm'
+              }`}
             >
               <img 
                 src={`https://flagcdn.com/24x18/${currentLanguageInfo.flag}.png`}
@@ -128,7 +136,7 @@ function Navigation() {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2"
+              className={`p-2 ${isScrolled ? 'text-zinc-900' : 'text-white'}`}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isMobileMenuOpen ? (
@@ -143,7 +151,7 @@ function Navigation() {
 
         {/* Mobile Language Dropdown */}
         {isLangMenuOpen && (
-          <div className="lg:hidden absolute right-4 mt-2 w-48 bg-zinc-900 border border-zinc-700 rounded-lg shadow-xl overflow-hidden z-50">
+          <div className="lg:hidden absolute right-4 mt-2 w-48 bg-white border border-zinc-200 rounded-lg shadow-xl overflow-hidden z-50">
             {languages.map((lang) => (
               <button
                 key={lang.code}
@@ -151,7 +159,7 @@ function Navigation() {
                   setLanguage(lang.code);
                   setIsLangMenuOpen(false);
                 }}
-                className={`w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-white/10 transition-colors ${
+                className={`w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-zinc-100 transition-colors ${
                   language === lang.code ? 'bg-[#D32027]/20 text-[#D32027]' : ''
                 }`}
               >
@@ -168,14 +176,14 @@ function Navigation() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-black/95 backdrop-blur-md border-t border-zinc-800">
+          <div className="lg:hidden bg-white/95 backdrop-blur-md border-t border-zinc-200">
             <div className="px-4 py-4 space-y-2">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block py-3 px-4 text-lg font-medium hover:bg-white/5 rounded-lg"
+                  className="block py-3 px-4 text-lg font-medium hover:bg-zinc-100 rounded-lg"
                 >
                   {link.label}
                 </a>
@@ -210,34 +218,37 @@ function HeroSection() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50" />
+        {/* Strong overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40" />
+        {/* Red accent overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#D32027]/20 via-transparent to-transparent" />
       </div>
 
       {/* Animated Background Elements */}
-      <div className="absolute inset-0 hero-pattern opacity-50" />
+      <div className="absolute inset-0 hero-pattern opacity-30" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="max-w-3xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/10 mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 mb-8 animate-fade-in">
             <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-            <span className="text-sm font-medium text-zinc-300">Arad, Romania • EU Licensed Carrier</span>
+            <span className="text-sm font-medium text-white">Arad, Romania • EU Licensed Carrier</span>
           </div>
 
           {/* Main Title */}
-          <h1 className="section-title text-white mb-6 animate-fade-in-up text-glow-red" style={{ animationDelay: '0.1s' }}>
+          <h1 className="section-title text-white mb-6 animate-fade-in-up" style={{ animationDelay: '0.1s', textShadow: '0 2px 20px rgba(0,0,0,0.5)' }}>
             {t('hero.title')}
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-zinc-300 font-light mb-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl md:text-2xl text-white/90 font-light mb-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             {t('hero.subtitle')}
           </p>
 
           {/* Description */}
-          <p className="text-lg text-zinc-400 mb-10 max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          <p className="text-lg text-white/80 mb-10 max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             {t('hero.description')}
           </p>
 
@@ -249,7 +260,7 @@ function HeroSection() {
               </svg>
               {t('hero.cta.quote')}
             </a>
-            <a href="#about" className="btn-secondary inline-flex items-center justify-center gap-2">
+            <a href="#about" className="inline-flex items-center justify-center gap-2 bg-transparent text-white px-8 py-4 rounded-lg font-semibold text-lg border-2 border-white/50 hover:bg-white hover:text-zinc-900 transition-all uppercase tracking-wide">
               {t('hero.cta.contact')}
             </a>
           </div>
@@ -258,7 +269,7 @@ function HeroSection() {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
-        <a href="#about" className="flex flex-col items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+        <a href="#about" className="flex flex-col items-center gap-2 text-white/70 hover:text-white transition-colors">
           <span className="text-sm">Scroll</span>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -274,9 +285,9 @@ function StatsSection() {
   const { t } = useLanguage();
   
   const stats = [
-    { number: '7+', label: t('about.experience') },
-    { number: '25+', label: t('about.countries') },
-    { number: '15+', label: t('about.trucks') },
+    { number: '18+', label: t('about.experience') },
+    { number: '14+', label: t('about.countries') },
+    { number: '16+', label: t('about.trucks') },
     { number: '5000+', label: t('about.deliveries') },
   ];
 
@@ -289,7 +300,7 @@ function StatsSection() {
           style={{ animationDelay: `${0.1 * index}s` }}
         >
           <div className="stat-number">{stat.number}</div>
-          <div className="text-zinc-400 text-sm md:text-base font-medium uppercase tracking-wide mt-2">
+          <div className="text-zinc-600 text-sm md:text-base font-medium uppercase tracking-wide mt-2">
             {stat.label}
           </div>
         </div>
@@ -303,7 +314,7 @@ function AboutSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="py-24 bg-zinc-950">
+    <section id="about" className="py-24 bg-zinc-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image Side */}
@@ -324,13 +335,13 @@ function AboutSection() {
           {/* Content Side */}
           <div className="animate-slide-in-right">
             <div className="divider mb-6" />
-            <h2 className="section-title text-white mb-6">
+            <h2 className="section-title text-zinc-900 mb-6">
               {t('about.title')}
             </h2>
             <p className="text-xl text-[#D32027] font-medium mb-4">
               {t('about.subtitle')}
             </p>
-            <p className="text-zinc-400 text-lg leading-relaxed mb-8">
+            <p className="text-zinc-600 text-lg leading-relaxed mb-8">
               {t('about.description')}
             </p>
 
@@ -342,7 +353,7 @@ function AboutSection() {
                 { icon: '⏰', text: 'On-Time Delivery' },
                 { icon: '🛡️', text: 'Fully Insured' },
               ].map((feature, index) => (
-                <div key={index} className="flex items-center gap-3 p-4 bg-white/5 rounded-lg">
+                <div key={index} className="flex items-center gap-3 p-4 bg-zinc-100 rounded-lg">
                   <span className="text-2xl">{feature.icon}</span>
                   <span className="font-medium">{feature.text}</span>
                 </div>
@@ -359,7 +370,7 @@ function AboutSection() {
         </div>
 
         {/* Stats */}
-        <div className="mt-24 pt-16 border-t border-zinc-800">
+        <div className="mt-24 pt-16 border-t border-zinc-200">
           <StatsSection />
         </div>
       </div>
@@ -411,12 +422,12 @@ function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-black">
+    <section id="services" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="divider mx-auto mb-6" />
-          <h2 className="section-title text-white mb-4">
+          <h2 className="section-title text-zinc-900 mb-4">
             {t('services.title')}
           </h2>
           <p className="section-subtitle mx-auto">
@@ -438,7 +449,7 @@ function ServicesSection() {
               <h3 className="text-xl font-bold mb-4 font-display tracking-wide">
                 {service.title}
               </h3>
-              <p className="text-zinc-400 leading-relaxed">
+              <p className="text-zinc-600 leading-relaxed">
                 {service.description}
               </p>
             </div>
@@ -463,12 +474,12 @@ function FleetSection() {
   ];
 
   return (
-    <section id="fleet" className="py-24 bg-zinc-950">
+    <section id="fleet" className="py-24 bg-zinc-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="divider mx-auto mb-6" />
-          <h2 className="section-title text-white mb-4">
+          <h2 className="section-title text-zinc-900 mb-4">
             {t('fleet.title')}
           </h2>
           <p className="section-subtitle mx-auto">
@@ -477,7 +488,7 @@ function FleetSection() {
         </div>
 
         {/* Description */}
-        <p className="text-center text-zinc-400 text-lg max-w-3xl mx-auto mb-12">
+        <p className="text-center text-zinc-600 text-lg max-w-3xl mx-auto mb-12">
           {t('fleet.description')}
         </p>
 
@@ -522,13 +533,13 @@ function CompanySection() {
   ];
 
   return (
-    <section className="py-24 bg-black">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Company Info */}
           <div>
             <div className="divider mb-6" />
-            <h2 className="section-title text-white mb-8">
+            <h2 className="section-title text-zinc-900 mb-8">
               {t('company.title')}
             </h2>
 
@@ -536,10 +547,10 @@ function CompanySection() {
               {companyInfo.map((info, index) => (
                 <div
                   key={index}
-                  className="flex flex-col sm:flex-row sm:items-center gap-2 p-4 bg-white/5 rounded-lg border border-zinc-800"
+                  className="flex flex-col sm:flex-row sm:items-center gap-2 p-4 bg-zinc-100 rounded-lg border border-zinc-200"
                 >
                   <span className="text-zinc-500 font-medium min-w-[140px]">{info.label}:</span>
-                  <span className="text-white font-semibold">{info.value}</span>
+                  <span className="text-zinc-900 font-semibold">{info.value}</span>
                 </div>
               ))}
             </div>
@@ -558,10 +569,10 @@ function CompanySection() {
           {/* Map */}
           <div>
             <div className="divider mb-6" />
-            <h2 className="section-title text-white mb-8">
+            <h2 className="section-title text-zinc-900 mb-8">
               {t('map.title')}
             </h2>
-            <p className="text-zinc-400 mb-6">
+            <p className="text-zinc-600 mb-6">
               {t('map.subtitle')}
             </p>
             <div className="map-container aspect-[4/3]">
@@ -640,12 +651,12 @@ function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-zinc-950">
+    <section id="contact" className="py-24 bg-zinc-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="divider mx-auto mb-6" />
-          <h2 className="section-title text-white mb-4">
+          <h2 className="section-title text-zinc-900 mb-4">
             {t('contact.title')}
           </h2>
           <p className="section-subtitle mx-auto">
@@ -749,7 +760,7 @@ function ContactSection() {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1">{t('contact.info.address')}</h3>
-                <p className="text-zinc-400">DN7, Arad<br />România</p>
+                <p className="text-zinc-600">DN7, Arad<br />România</p>
               </div>
             </div>
 
@@ -762,7 +773,7 @@ function ContactSection() {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1">{t('contact.info.phone')}</h3>
-                <p className="text-zinc-400">
+                <p className="text-zinc-600">
                   <a href="tel:+40728174730" className="hover:text-[#E53935] transition-colors">+40 728 174 730</a>
                 </p>
               </div>
@@ -777,7 +788,7 @@ function ContactSection() {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1">{t('contact.info.email')}</h3>
-                <p className="text-zinc-400">
+                <p className="text-zinc-600">
                   <a href="mailto:office@amidamaru.ro" className="hover:text-[#D32027] transition-colors">office@amidamaru.ro</a>
                 </p>
               </div>
@@ -792,7 +803,7 @@ function ContactSection() {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1">{t('contact.info.hours')}</h3>
-                <p className="text-zinc-400">{t('contact.info.hours.value')}</p>
+                <p className="text-zinc-600">{t('contact.info.hours.value')}</p>
               </div>
             </div>
 
@@ -809,7 +820,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-zinc-950 border-t border-zinc-800">
+    <footer className="bg-zinc-50 border-t border-zinc-200">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-4 gap-12">
@@ -822,7 +833,7 @@ function Footer() {
               height={56}
               className="h-14 w-auto mb-6"
             />
-            <p className="text-zinc-400 text-sm leading-relaxed max-w-md">
+            <p className="text-zinc-600 text-sm leading-relaxed max-w-md">
               Transport rutier internațional de mărfuri în toată Europa. 
               Flotă modernă Volvo & Iveco, servicii profesionale și livrări la timp.
             </p>
@@ -839,17 +850,17 @@ function Footer() {
                 <svg className="w-5 h-5 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
-                <span className="text-[#1877F2] text-sm font-medium group-hover:text-white transition-colors">Facebook</span>
+                <span className="text-[#1877F2] text-sm font-medium group-hover:text-zinc-900 transition-colors">Facebook</span>
               </a>
             </div>
           </div>
 
           {/* Quick Contact */}
           <div>
-            <h4 className="text-white font-bold mb-4 uppercase text-sm tracking-wide">Contact</h4>
+            <h4 className="text-zinc-900 font-bold mb-4 uppercase text-sm tracking-wide">Contact</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="tel:+40728174730" className="text-zinc-400 hover:text-[#D32027] transition-colors flex items-center gap-2">
+                <a href="tel:+40728174730" className="text-zinc-600 hover:text-[#D32027] transition-colors flex items-center gap-2">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
@@ -857,14 +868,14 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:office@amidamaru.ro" className="text-zinc-400 hover:text-[#D32027] transition-colors flex items-center gap-2">
+                <a href="mailto:office@amidamaru.ro" className="text-zinc-600 hover:text-[#D32027] transition-colors flex items-center gap-2">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   office@amidamaru.ro
                 </a>
               </li>
-              <li className="text-zinc-400 flex items-start gap-2">
+              <li className="text-zinc-600 flex items-start gap-2">
                 <svg className="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -876,22 +887,22 @@ function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h4 className="text-white font-bold mb-4 uppercase text-sm tracking-wide">Legal</h4>
+            <h4 className="text-zinc-900 font-bold mb-4 uppercase text-sm tracking-wide">Legal</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="/privacy" className="text-zinc-400 hover:text-white transition-colors">
+                <a href="/privacy" className="text-zinc-600 hover:text-zinc-900 transition-colors">
                   {t('footer.privacy')}
                 </a>
               </li>
               <li>
-                <a href="/cookies" className="text-zinc-400 hover:text-white transition-colors">
+                <a href="/cookies" className="text-zinc-600 hover:text-zinc-900 transition-colors">
                   {t('footer.cookies')}
                 </a>
               </li>
             </ul>
             
             {/* Company Info */}
-            <div className="mt-6 pt-6 border-t border-zinc-800">
+            <div className="mt-6 pt-6 border-t border-zinc-200">
               <p className="text-zinc-500 text-xs">CUI: 39823843</p>
               <p className="text-zinc-500 text-xs">Reg. Com.: J2/1413/2018</p>
             </div>
@@ -900,7 +911,7 @@ function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-zinc-800 bg-black/50">
+      <div className="border-t border-zinc-200 bg-white/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-zinc-500 text-sm">
@@ -919,7 +930,7 @@ function Footer() {
 // Main Page Component
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-white text-zinc-900">
       <Navigation />
       <HeroSection />
       <AboutSection />
