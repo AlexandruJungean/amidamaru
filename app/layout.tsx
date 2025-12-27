@@ -60,14 +60,7 @@ export const metadata: Metadata = {
     },
   },
 
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
-  },
-
-  // Manifest
+  // Manifest (icons are auto-detected from /app folder: favicon.ico, apple-touch-icon.png)
   manifest: "/site.webmanifest",
 
   // Open Graph
