@@ -584,18 +584,59 @@ function CompanySection() {
 }
 
 // Contact Section
+// Uses environment variable for the Web3Forms access key
+
 function ContactSection() {
   const { t } = useLanguage();
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormStatus('sending');
-    // Simulate form submission
-    setTimeout(() => {
-      setFormStatus('sent');
-      setTimeout(() => setFormStatus('idle'), 3000);
-    }, 1000);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '',
+          subject: `New Contact from ${formData.name} - Amidamaru Website`,
+          from_name: 'Amidamaru Website',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || 'Not provided',
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setFormStatus('sent');
+        setFormData({ name: '', email: '', phone: '', message: '' });
+        setTimeout(() => setFormStatus('idle'), 5000);
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch {
+      setFormStatus('error');
+      setTimeout(() => setFormStatus('idle'), 5000);
+    }
   };
 
   return (
@@ -619,6 +660,9 @@ function ContactSection() {
               <div>
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder={t('contact.form.name')}
                   className="form-input"
                   required
@@ -627,18 +671,27 @@ function ContactSection() {
               <div className="grid md:grid-cols-2 gap-6">
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder={t('contact.form.email')}
                   className="form-input"
                   required
                 />
                 <input
                   type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                   placeholder={t('contact.form.phone')}
                   className="form-input"
                 />
               </div>
               <div>
                 <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder={t('contact.form.message')}
                   rows={5}
                   className="form-input resize-none"
@@ -665,6 +718,13 @@ function ContactSection() {
                     </svg>
                     Sent!
                   </>
+                ) : formStatus === 'error' ? (
+                  <>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    Error - Try again
+                  </>
                 ) : (
                   <>
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -689,7 +749,7 @@ function ContactSection() {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1">{t('contact.info.address')}</h3>
-                <p className="text-zinc-400">Str. Iulia, Nr. 2<br />Arad, Comuna Vladimirescu<br />Romania, 310410</p>
+                <p className="text-zinc-400">DN7, Arad<br />România</p>
               </div>
             </div>
 
@@ -703,7 +763,7 @@ function ContactSection() {
               <div>
                 <h3 className="font-bold text-lg mb-1">{t('contact.info.phone')}</h3>
                 <p className="text-zinc-400">
-                  <a href="tel:+40757123456" className="hover:text-[#D32027] transition-colors">+40 757 123 456</a>
+                  <a href="tel:+40728174730" className="hover:text-[#E53935] transition-colors">+40 728 174 730</a>
                 </p>
               </div>
             </div>
@@ -735,6 +795,24 @@ function ContactSection() {
                 <p className="text-zinc-400">{t('contact.info.hours.value')}</p>
               </div>
             </div>
+
+            {/* Facebook */}
+            <a 
+              href="https://www.facebook.com/profile.php?id=100054305449281"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card p-6 flex items-start gap-4 hover:border-[#1877F2] group"
+            >
+              <div className="w-12 h-12 rounded-xl bg-[#1877F2]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#1877F2]/30 transition-colors">
+                <svg className="w-6 h-6 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg mb-1">Facebook</h3>
+                <p className="text-zinc-400 group-hover:text-[#1877F2] transition-colors">Follow us on Facebook</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -751,8 +829,8 @@ function Footer() {
     <footer className="bg-black border-t border-zinc-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8 items-center">
-          {/* Logo */}
-          <div>
+          {/* Logo & Social */}
+          <div className="flex items-center gap-4">
             <Image
               src="/logo.png"
               alt="Amidamaru Logo"
@@ -760,6 +838,17 @@ function Footer() {
               height={45}
               className="h-10 w-auto"
             />
+            <a 
+              href="https://www.facebook.com/profile.php?id=100054305449281"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full bg-[#1877F2]/20 flex items-center justify-center hover:bg-[#1877F2]/30 transition-colors"
+              aria-label="Facebook"
+            >
+              <svg className="w-5 h-5 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
           </div>
 
           {/* Copyright */}
@@ -770,20 +859,20 @@ function Footer() {
 
           {/* Links */}
           <div className="flex justify-end gap-6">
-            <a href="#" className="text-zinc-500 hover:text-white transition-colors text-sm">
+            <a href="/privacy" className="text-zinc-500 hover:text-white transition-colors text-sm">
               {t('footer.privacy')}
             </a>
-            <a href="#" className="text-zinc-500 hover:text-white transition-colors text-sm">
+            <a href="/cookies" className="text-zinc-500 hover:text-white transition-colors text-sm">
               {t('footer.cookies')}
             </a>
           </div>
         </div>
 
-        {/* Social & GDPR Notice */}
+        {/* GDPR Notice */}
         <div className="mt-8 pt-8 border-t border-zinc-800 text-center">
           <p className="text-zinc-600 text-sm max-w-3xl mx-auto">
-            S.C. AMIDAMARU S.R.L. is a personal data operator registered in Romania. 
-            We are committed to protecting your privacy and handling your data responsibly.
+            S.C. AMIDAMARU S.R.L., operator de date cu caracter personal, cu sediul în Str. Iulia, nr. 2, Arad, 
+            comuna Vladimirescu, România, înregistrată la Registrul Comerțului sub nr. J2/1413/2018, cod fiscal 39823843.
           </p>
         </div>
       </div>

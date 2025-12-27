@@ -1,0 +1,14 @@
+# Robots.txt for AMIDAMARU Transport
+# https://amidamaru.ro
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://amidamaru.ro/sitemap.xml
+
+# Block sensitive paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+

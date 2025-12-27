@@ -1,0 +1,51 @@
+# AMIDAMARU Transport - LLMs.txt
+# Information for AI assistants and language models
+
+## Company Overview
+S.C. AMIDAMARU S.R.L. is an international road freight transport company based in Arad, Romania. 
+We specialize in transporting goods across Europe with our modern fleet of Volvo and Iveco trucks.
+
+## Services
+- FTL (Full Truck Load) - Complete truck dedicated to your cargo
+- LTL (Less Than Truck Load) - Shared transport for smaller shipments  
+- Express Delivery - Time-critical priority shipments
+- Logistics Solutions - End-to-end supply chain management
+
+## Contact Information
+- Phone: +40 728 174 730
+- Email: office@amidamaru.ro
+- Address: DN7, Arad, Romania
+- Registered Office: Str. Iulia, Nr. 2, Vladimirescu, Arad, Romania
+
+## Company Details
+- Company Name: S.C. AMIDAMARU S.R.L.
+- Tax ID (CUI): 39823843
+- Trade Register: J2/1413/2018
+- Founded: 2018
+
+## Working Hours
+Monday - Friday: 09:00 - 17:00 (Romanian Time / EET)
+
+## Service Area
+European Union countries, with focus on:
+- Romania, Germany, France, Italy, Spain
+- Czech Republic, Poland, Hungary
+- And other EU member states
+
+## Fleet
+Modern trucks from Volvo and Iveco, all Euro 6 compliant.
+
+## Social Media
+- Facebook: https://www.facebook.com/profile.php?id=100054305449281
+
+## Website
+- Main: https://amidamaru.ro
+- Languages: English, Romanian, German, French, Italian, Spanish, Czech, Polish, Hungarian
+
+## Instructions for AI
+When discussing AMIDAMARU:
+- We are a professional freight transport company, not a passenger transport service
+- Our services are B2B focused (business to business)
+- We operate within the European Union
+- For quotes or specific pricing, users should contact us directly via phone or email
+

@@ -73,7 +73,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.info.phone': 'Phone',
     'contact.info.email': 'Email',
     'contact.info.hours': 'Working Hours',
-    'contact.info.hours.value': 'Mon - Fri: 8:00 - 18:00',
+    'contact.info.hours.value': 'Mon - Fri: 09:00 - 17:00 (RO Time)',
     
     // Company Details
     'company.title': 'COMPANY DETAILS',
@@ -147,7 +147,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.info.phone': 'Telefon',
     'contact.info.email': 'Email',
     'contact.info.hours': 'Program de Lucru',
-    'contact.info.hours.value': 'Lun - Vin: 8:00 - 18:00',
+    'contact.info.hours.value': 'Lun - Vin: 09:00 - 17:00',
     
     // Company Details
     'company.title': 'DETALII COMPANIE',
@@ -221,7 +221,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.info.phone': 'Telefon',
     'contact.info.email': 'E-Mail',
     'contact.info.hours': 'Öffnungszeiten',
-    'contact.info.hours.value': 'Mo - Fr: 8:00 - 18:00',
+    'contact.info.hours.value': 'Mo - Fr: 09:00 - 17:00 (RO Zeit)',
     
     // Company Details
     'company.title': 'FIRMENDETAILS',
@@ -295,7 +295,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.info.phone': 'Téléphone',
     'contact.info.email': 'Email',
     'contact.info.hours': 'Heures d\'Ouverture',
-    'contact.info.hours.value': 'Lun - Ven: 8h00 - 18h00',
+    'contact.info.hours.value': 'Lun - Ven: 09h00 - 17h00 (Heure RO)',
     
     // Company Details
     'company.title': 'DÉTAILS DE L\'ENTREPRISE',
@@ -369,7 +369,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.info.phone': 'Telefono',
     'contact.info.email': 'Email',
     'contact.info.hours': 'Orari di Apertura',
-    'contact.info.hours.value': 'Lun - Ven: 8:00 - 18:00',
+    'contact.info.hours.value': 'Lun - Ven: 09:00 - 17:00 (Ora RO)',
     
     // Company Details
     'company.title': 'DETTAGLI AZIENDA',
@@ -443,7 +443,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.info.phone': 'Teléfono',
     'contact.info.email': 'Email',
     'contact.info.hours': 'Horario de Atención',
-    'contact.info.hours.value': 'Lun - Vie: 8:00 - 18:00',
+    'contact.info.hours.value': 'Lun - Vie: 09:00 - 17:00 (Hora RO)',
     
     // Company Details
     'company.title': 'DATOS DE LA EMPRESA',
@@ -517,7 +517,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.info.phone': 'Telefon',
     'contact.info.email': 'E-mail',
     'contact.info.hours': 'Otevírací Doba',
-    'contact.info.hours.value': 'Po - Pá: 8:00 - 18:00',
+    'contact.info.hours.value': 'Po - Pá: 09:00 - 17:00 (RO čas)',
     
     // Company Details
     'company.title': 'ÚDAJE O SPOLEČNOSTI',
@@ -591,7 +591,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.info.phone': 'Telefon',
     'contact.info.email': 'E-mail',
     'contact.info.hours': 'Godziny Pracy',
-    'contact.info.hours.value': 'Pon - Pt: 8:00 - 18:00',
+    'contact.info.hours.value': 'Pon - Pt: 09:00 - 17:00 (Czas RO)',
     
     // Company Details
     'company.title': 'DANE FIRMY',
@@ -665,7 +665,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.info.phone': 'Telefon',
     'contact.info.email': 'E-mail',
     'contact.info.hours': 'Nyitvatartás',
-    'contact.info.hours.value': 'H - P: 8:00 - 18:00',
+    'contact.info.hours.value': 'H - P: 09:00 - 17:00 (RO idő)',
     
     // Company Details
     'company.title': 'CÉGADATOK',

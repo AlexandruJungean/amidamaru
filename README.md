@@ -52,6 +52,8 @@ cd web-amidamaru
 # Instalare dependențe
 npm install
 
+# Configurare environment variables (vezi secțiunea de mai jos)
+
 # Rulare în mod development
 npm run dev
 
@@ -63,6 +65,27 @@ npm start
 ```
 
 Deschide [http://localhost:3000](http://localhost:3000) în browser.
+
+## 🔐 Environment Variables
+
+Pentru ca formularul de contact să funcționeze, trebuie să configurezi variabilele de mediu:
+
+### 1. Creează fișierul `.env.local`
+
+```bash
+# În directorul proiectului, creează fișierul .env.local
+NEXT_PUBLIC_WEB3FORMS_KEY=your_access_key_here
+```
+
+### 2. Obține cheia Web3Forms (GRATUIT)
+
+1. Accesează [web3forms.com](https://web3forms.com)
+2. Click pe "Create Access Key"
+3. Introdu email-ul unde vrei să primești mesajele de contact
+4. Confirmă email-ul și copiază Access Key
+5. Înlocuiește `your_access_key_here` cu cheia primită
+
+> ⚠️ **Important:** Fișierul `.env.local` NU trebuie adăugat în Git (este deja în .gitignore)
 
 ## 🛠️ Tech Stack
 
