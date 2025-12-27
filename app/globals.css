@@ -1,14 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand Colors - inspired by the logo */
-  --orange-primary: #FF5722;
-  --orange-light: #FF7043;
-  --orange-dark: #E64A19;
-  --blue-primary: #1565C0;
-  --blue-light: #1976D2;
-  --blue-dark: #0D47A1;
-  --red-truck: #C62828;
+  /* Brand Colors - Red from trucks + Blue from logo */
+  --red-primary: #D32027;
+  --red-light: #E53935;
+  --red-dark: #B71C1C;
+  --blue-primary: #2E67B2;
+  --blue-light: #4080C9;
+  --blue-dark: #1E4A8A;
+  
+  /* Aliases for easier use */
+  --accent-primary: var(--red-primary);
+  --accent-light: var(--red-light);
+  --accent-dark: var(--red-dark);
   
   /* Dark Theme */
   --background: #0a0a0a;
@@ -18,9 +22,9 @@
   --foreground-muted: #a1a1a1;
   --border-color: #2a2a2a;
   
-  /* Accents */
-  --accent-glow: rgba(255, 87, 34, 0.15);
-  --blue-glow: rgba(21, 101, 192, 0.15);
+  /* Accents - using truck red */
+  --accent-glow: rgba(211, 32, 39, 0.25);
+  --blue-glow: rgba(46, 103, 178, 0.20);
 }
 
 @theme inline {
@@ -55,12 +59,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--orange-primary);
+  background: var(--red-primary);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--orange-light);
+  background: var(--red-light);
 }
 
 /* Typography */
@@ -77,8 +81,8 @@ body {
   background: linear-gradient(180deg, var(--background) 0%, var(--background-secondary) 100%);
 }
 
-.gradient-orange {
-  background: linear-gradient(135deg, var(--orange-primary) 0%, var(--orange-dark) 100%);
+.gradient-red {
+  background: linear-gradient(135deg, var(--red-primary) 0%, var(--red-dark) 100%);
 }
 
 .gradient-blue {
@@ -86,7 +90,7 @@ body {
 }
 
 /* Glow Effects */
-.glow-orange {
+.glow-red {
   box-shadow: 0 0 60px var(--accent-glow), 0 0 100px var(--accent-glow);
 }
 
@@ -94,7 +98,7 @@ body {
   box-shadow: 0 0 60px var(--blue-glow), 0 0 100px var(--blue-glow);
 }
 
-.text-glow-orange {
+.text-glow-red {
   text-shadow: 0 0 40px var(--accent-glow);
 }
 
@@ -217,14 +221,14 @@ body {
 }
 
 .card:hover {
-  border-color: var(--orange-primary);
+  border-color: var(--red-primary);
   transform: translateY(-4px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px var(--accent-glow);
 }
 
 /* Button Styles */
 .btn-primary {
-  background: linear-gradient(135deg, var(--orange-primary) 0%, var(--orange-dark) 100%);
+  background: linear-gradient(135deg, var(--red-primary) 0%, var(--red-dark) 100%);
   color: white;
   padding: 16px 32px;
   border-radius: 8px;
@@ -250,14 +254,14 @@ body {
   font-weight: 600;
   font-size: 1.125rem;
   transition: all 0.3s ease;
-  border: 2px solid var(--orange-primary);
+  border: 2px solid var(--red-primary);
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .btn-secondary:hover {
-  background: var(--orange-primary);
+  background: var(--red-primary);
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(255, 87, 34, 0.3);
 }
@@ -280,7 +284,7 @@ body {
 .divider {
   height: 4px;
   width: 80px;
-  background: linear-gradient(90deg, var(--orange-primary), var(--blue-primary));
+  background: linear-gradient(90deg, var(--red-primary), var(--blue-primary));
   border-radius: 2px;
 }
 
@@ -301,7 +305,7 @@ body {
 }
 
 .map-container:hover {
-  border-color: var(--orange-primary);
+  border-color: var(--red-primary);
 }
 
 /* Form Styles */
@@ -318,7 +322,7 @@ body {
 
 .form-input:focus {
   outline: none;
-  border-color: var(--orange-primary);
+  border-color: var(--red-primary);
   box-shadow: 0 0 0 3px var(--accent-glow);
 }
 
@@ -359,7 +363,7 @@ body {
 .stat-number {
   font-family: var(--font-bebas), system-ui, sans-serif;
   font-size: clamp(3rem, 8vw, 5rem);
-  background: linear-gradient(135deg, var(--orange-primary), var(--orange-light));
+  background: linear-gradient(135deg, var(--red-primary), var(--red-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -385,7 +389,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--orange-primary);
+  background: var(--red-primary);
   transition: width 0.3s ease;
 }
 

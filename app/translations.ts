@@ -8,15 +8,15 @@ export interface LanguageInfo {
 }
 
 export const languages: LanguageInfo[] = [
-  { code: 'en', name: 'English', nativeName: 'English', flag: '🇬🇧' },
-  { code: 'ro', name: 'Romanian', nativeName: 'Română', flag: '🇷🇴' },
-  { code: 'de', name: 'German', nativeName: 'Deutsch', flag: '🇩🇪' },
-  { code: 'fr', name: 'French', nativeName: 'Français', flag: '🇫🇷' },
-  { code: 'it', name: 'Italian', nativeName: 'Italiano', flag: '🇮🇹' },
-  { code: 'es', name: 'Spanish', nativeName: 'Español', flag: '🇪🇸' },
-  { code: 'cs', name: 'Czech', nativeName: 'Čeština', flag: '🇨🇿' },
-  { code: 'pl', name: 'Polish', nativeName: 'Polski', flag: '🇵🇱' },
-  { code: 'hu', name: 'Hungarian', nativeName: 'Magyar', flag: '🇭🇺' },
+  { code: 'en', name: 'English', nativeName: 'English', flag: 'gb' },
+  { code: 'ro', name: 'Romanian', nativeName: 'Română', flag: 'ro' },
+  { code: 'de', name: 'German', nativeName: 'Deutsch', flag: 'de' },
+  { code: 'fr', name: 'French', nativeName: 'Français', flag: 'fr' },
+  { code: 'it', name: 'Italian', nativeName: 'Italiano', flag: 'it' },
+  { code: 'es', name: 'Spanish', nativeName: 'Español', flag: 'es' },
+  { code: 'cs', name: 'Czech', nativeName: 'Čeština', flag: 'cz' },
+  { code: 'pl', name: 'Polish', nativeName: 'Polski', flag: 'pl' },
+  { code: 'hu', name: 'Hungarian', nativeName: 'Magyar', flag: 'hu' },
 ];
 
 export const translations: Record<Language, Record<string, string>> = {
