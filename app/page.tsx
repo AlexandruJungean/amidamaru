@@ -40,7 +40,7 @@ function Navigation() {
               alt="Amidamaru Logo"
               width={180}
               height={50}
-              className="h-12 w-auto"
+              className="h-8 md:h-12 w-auto"
               priority
             />
           </a>
@@ -70,8 +70,8 @@ function Navigation() {
                 }`}
               >
                 <img 
-                  src={`https://flagcdn.com/24x18/${currentLanguageInfo.flag}.png`}
-                  srcSet={`https://flagcdn.com/48x36/${currentLanguageInfo.flag}.png 2x`}
+                  src={`https://flagcdn.com/w40/${currentLanguageInfo.flag}.png`}
+                  srcSet={`https://flagcdn.com/w80/${currentLanguageInfo.flag}.png 2x`}
                   alt={currentLanguageInfo.name}
                   className="w-6 h-auto rounded-sm"
                 />
@@ -100,8 +100,8 @@ function Navigation() {
                       }`}
                     >
                       <img 
-                        src={`https://flagcdn.com/24x18/${lang.flag}.png`}
-                        srcSet={`https://flagcdn.com/48x36/${lang.flag}.png 2x`}
+                        src={`https://flagcdn.com/w40/${lang.flag}.png`}
+                        srcSet={`https://flagcdn.com/w80/${lang.flag}.png 2x`}
                         alt={lang.name}
                         className="w-6 h-auto rounded-sm"
                       />
@@ -128,7 +128,8 @@ function Navigation() {
               }`}
             >
               <img 
-                src={`https://flagcdn.com/24x18/${currentLanguageInfo.flag}.png`}
+                src={`https://flagcdn.com/w40/${currentLanguageInfo.flag}.png`}
+                srcSet={`https://flagcdn.com/w80/${currentLanguageInfo.flag}.png 2x`}
                 alt={currentLanguageInfo.name}
                 className="w-6 h-auto rounded-sm"
               />
@@ -164,7 +165,8 @@ function Navigation() {
                 }`}
               >
                 <img 
-                  src={`https://flagcdn.com/24x18/${lang.flag}.png`}
+                  src={`https://flagcdn.com/w40/${lang.flag}.png`}
+                  srcSet={`https://flagcdn.com/w80/${lang.flag}.png 2x`}
                   alt={lang.name}
                   className="w-6 h-auto rounded-sm"
                 />
