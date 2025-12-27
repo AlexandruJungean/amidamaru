@@ -60,6 +60,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'fleet.title': 'OUR FLEET',
     'fleet.subtitle': 'Modern vehicles for safe and efficient transport',
     'fleet.description': 'Our fleet consists of modern Volvo and Iveco trucks equipped with the latest technology for tracking and temperature control. All vehicles meet Euro 6 emission standards.',
+    'fleet.viewMore': 'View More',
+    'fleet.viewLess': 'View Less',
     
     // Contact Section
     'contact.title': 'CONTACT US',
@@ -134,6 +136,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'fleet.title': 'FLOTA NOASTRĂ',
     'fleet.subtitle': 'Vehicule moderne pentru transport sigur și eficient',
     'fleet.description': 'Flota noastră este formată din camioane moderne Volvo și Iveco echipate cu cele mai noi tehnologii de urmărire și control al temperaturii. Toate vehiculele respectă standardele de emisii Euro 6.',
+    'fleet.viewMore': 'Vezi Mai Multe',
+    'fleet.viewLess': 'Vezi Mai Puține',
     
     // Contact Section
     'contact.title': 'CONTACTEAZĂ-NE',
@@ -208,6 +212,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'fleet.title': 'UNSERE FLOTTE',
     'fleet.subtitle': 'Moderne Fahrzeuge für sicheren und effizienten Transport',
     'fleet.description': 'Unsere Flotte besteht aus modernen Volvo- und Iveco-LKWs, die mit der neuesten Technologie für Tracking und Temperaturkontrolle ausgestattet sind. Alle Fahrzeuge erfüllen die Euro 6 Emissionsstandards.',
+    'fleet.viewMore': 'Mehr Anzeigen',
+    'fleet.viewLess': 'Weniger Anzeigen',
     
     // Contact Section
     'contact.title': 'KONTAKTIEREN SIE UNS',
@@ -282,6 +288,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'fleet.title': 'NOTRE FLOTTE',
     'fleet.subtitle': 'Véhicules modernes pour un transport sûr et efficace',
     'fleet.description': 'Notre flotte se compose de camions Volvo et Iveco modernes équipés des dernières technologies de suivi et de contrôle de température. Tous les véhicules respectent les normes d\'émission Euro 6.',
+    'fleet.viewMore': 'Voir Plus',
+    'fleet.viewLess': 'Voir Moins',
     
     // Contact Section
     'contact.title': 'CONTACTEZ-NOUS',
@@ -356,6 +364,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'fleet.title': 'LA NOSTRA FLOTTA',
     'fleet.subtitle': 'Veicoli moderni per un trasporto sicuro ed efficiente',
     'fleet.description': 'La nostra flotta è composta da camion Volvo e Iveco moderni dotati delle ultime tecnologie per il tracking e il controllo della temperatura. Tutti i veicoli rispettano gli standard di emissione Euro 6.',
+    'fleet.viewMore': 'Vedi Altro',
+    'fleet.viewLess': 'Vedi Meno',
     
     // Contact Section
     'contact.title': 'CONTATTACI',
@@ -430,6 +440,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'fleet.title': 'NUESTRA FLOTA',
     'fleet.subtitle': 'Vehículos modernos para un transporte seguro y eficiente',
     'fleet.description': 'Nuestra flota está compuesta por camiones Volvo e Iveco modernos equipados con la última tecnología para seguimiento y control de temperatura. Todos los vehículos cumplen con los estándares de emisión Euro 6.',
+    'fleet.viewMore': 'Ver Más',
+    'fleet.viewLess': 'Ver Menos',
     
     // Contact Section
     'contact.title': 'CONTÁCTENOS',
@@ -504,6 +516,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'fleet.title': 'NAŠE FLOTILA',
     'fleet.subtitle': 'Moderní vozidla pro bezpečnou a efektivní přepravu',
     'fleet.description': 'Naše flotila se skládá z moderních kamionů Volvo a Iveco vybavených nejnovějšími technologiemi pro sledování a kontrolu teploty. Všechna vozidla splňují emisní normy Euro 6.',
+    'fleet.viewMore': 'Zobrazit Více',
+    'fleet.viewLess': 'Zobrazit Méně',
     
     // Contact Section
     'contact.title': 'KONTAKTUJTE NÁS',
@@ -578,6 +592,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'fleet.title': 'NASZA FLOTA',
     'fleet.subtitle': 'Nowoczesne pojazdy dla bezpiecznego i wydajnego transportu',
     'fleet.description': 'Nasza flota składa się z nowoczesnych ciężarówek Volvo i Iveco wyposażonych w najnowsze technologie śledzenia i kontroli temperatury. Wszystkie pojazdy spełniają normy emisji Euro 6.',
+    'fleet.viewMore': 'Zobacz Więcej',
+    'fleet.viewLess': 'Zobacz Mniej',
     
     // Contact Section
     'contact.title': 'SKONTAKTUJ SIĘ',
@@ -652,6 +668,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'fleet.title': 'FLOTTÁNK',
     'fleet.subtitle': 'Modern járművek a biztonságos és hatékony szállításért',
     'fleet.description': 'Flottánk modern Volvo és Iveco teherautókból áll, amelyek a legújabb nyomkövetési és hőmérséklet-szabályozási technológiával vannak felszerelve. Minden jármű megfelel az Euro 6 kibocsátási szabványoknak.',
+    'fleet.viewMore': 'Több Megtekintése',
+    'fleet.viewLess': 'Kevesebb Megtekintése',
     
     // Contact Section
     'contact.title': 'KAPCSOLAT',

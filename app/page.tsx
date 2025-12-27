@@ -465,15 +465,27 @@ function ServicesSection() {
 // Fleet Gallery Section
 function FleetSection() {
   const { t } = useLanguage();
+  const [showAll, setShowAll] = useState(false);
 
   const fleetImages = [
+    // First 6 images (always visible)
+    { src: '/images/WhatsApp Image 2025-12-27 at 20.13.45.jpeg', alt: 'Amidamaru Truck on Highway' },
     { src: '/images/481670986_2622106481313194_5432381489758203524_n.jpg', alt: 'Iveco Trucks' },
     { src: '/images/WhatsApp Image 2025-12-26 at 18.01.03-2.jpeg', alt: 'Volvo FH Fleet' },
     { src: '/images/WhatsApp Image 2025-12-26 at 19.11.47.jpeg', alt: 'Transport Operations' },
     { src: '/images/WhatsApp Image 2025-12-26 at 18.16.28-8.jpeg', alt: 'Loading Dock' },
     { src: '/images/WhatsApp Image 2025-12-26 at 18.01.04-7.jpeg', alt: 'Branded Trailers' },
+    // Additional images (shown when expanded)
     { src: '/images/WhatsApp Image 2025-12-26 at 18.17.09.jpeg', alt: 'Modern Trucks' },
+    { src: '/images/WhatsApp Image 2025-12-26 at 19.20.30.jpeg', alt: 'Fleet Lineup' },
+    { src: '/images/WhatsApp Image 2025-12-26 at 19.22.00.jpeg', alt: 'Truck Loading' },
+    { src: '/images/WhatsApp Image 2025-12-26 at 18.01.04-6.jpeg', alt: 'European Transport' },
+    { src: '/images/WhatsApp Image 2025-12-26 at 18.01.04-5.jpeg', alt: 'Logistics Operations' },
+    { src: '/images/WhatsApp Image 2025-12-26 at 18.16.51.jpeg', alt: 'Road Transport' },
   ];
+
+  const visibleImages = showAll ? fleetImages : fleetImages.slice(0, 6);
+  const hiddenCount = fleetImages.length - 6;
 
   return (
     <section id="fleet" className="py-24 bg-zinc-50">
@@ -496,11 +508,11 @@ function FleetSection() {
 
         {/* Gallery Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {fleetImages.map((image, index) => (
+          {visibleImages.map((image, index) => (
             <div
               key={index}
               className="gallery-item animate-fade-in-up"
-              style={{ animationDelay: `${0.1 * index}s` }}
+              style={{ animationDelay: `${0.1 * (index % 6)}s` }}
             >
               <Image
                 src={image.src}
@@ -511,6 +523,32 @@ function FleetSection() {
             </div>
           ))}
         </div>
+
+        {/* View More / View Less Button */}
+        {hiddenCount > 0 && (
+          <div className="text-center mt-10">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="inline-flex items-center gap-2 px-8 py-3 bg-white border-2 border-[var(--red-primary)] text-[var(--red-primary)] font-semibold rounded-lg hover:bg-[var(--red-primary)] hover:text-white transition-all duration-300 shadow-sm hover:shadow-md"
+            >
+              {showAll ? (
+                <>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                  </svg>
+                  {t('fleet.viewLess')}
+                </>
+              ) : (
+                <>
+                  {t('fleet.viewMore')} (+{hiddenCount})
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </>
+              )}
+            </button>
+          </div>
+        )}
 
         {/* Fleet Brands */}
         <div className="mt-16 flex flex-wrap justify-center items-center gap-12 opacity-60">
