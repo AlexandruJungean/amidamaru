@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Rajdhani } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "./LanguageContext";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -15,15 +16,15 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata: Metadata = {
-  title: "AMIDAMARU | Transport Internațional - Arad, România",
+  title: "AMIDAMARU | International Transport - Arad, Romania",
   description:
-    "S.C. AMIDAMARU S.R.L. - Companie de transport rutier internațional de mărfuri din Arad, România. Flotă modernă, servicii profesionale în toată Europa.",
+    "S.C. AMIDAMARU S.R.L. - International road freight transport company from Arad, Romania. Modern fleet, professional services across Europe.",
   keywords:
-    "transport, transport internațional, transport mărfuri, Arad, România, camione, logistică, TIR",
+    "transport, international transport, freight transport, Arad, Romania, trucks, logistics, TIR, Europe",
   openGraph: {
-    title: "AMIDAMARU | Transport Internațional",
-    description: "Companie de transport rutier internațional de mărfuri din Arad, România",
-    locale: "ro_RO",
+    title: "AMIDAMARU | International Transport",
+    description: "International road freight transport company from Arad, Romania",
+    locale: "en_US",
     type: "website",
   },
 };
@@ -34,9 +35,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ro">
+    <html lang="en">
       <body className={`${bebasNeue.variable} ${rajdhani.variable} antialiased`}>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );
