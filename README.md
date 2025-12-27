@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚛 AMIDAMARU - Transport Internațional
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+![Amidamaru Logo](public/logo.png)
+
+**Website oficial pentru S.C. AMIDAMARU S.R.L.**
+
+Companie de transport rutier internațional de mărfuri din Arad, România
+
+[![Next.js](https://img.shields.io/badge/Next.js-16.1-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+
+</div>
+
+---
+
+## 📋 Despre Proiect
+
+Website profesional pentru **AMIDAMARU**, o companie de transport rutier internațional cu sediul în Arad, România. Site-ul prezintă serviciile companiei, flota modernă de camioane și oferă informații de contact pentru potențialii clienți.
+
+### ✨ Caracteristici
+
+- 🎨 **Design Modern & Profesional** - Interfață dark theme cu accente în culorile brandului (portocaliu și albastru)
+- 📱 **Fully Responsive** - Optimizat pentru toate dispozitivele
+- 🖼️ **Galerie Flotă** - Prezentare vizuală a camioanelor Volvo și Iveco
+- 📍 **Integrare Google Maps** - Localizare sediu
+- 📧 **Formular de Contact** - Pentru cereri de ofertă și colaborări
+- ⚡ **Performanță Optimizată** - Built cu Next.js 16 pentru încărcare rapidă
+- 🔍 **SEO Optimizat** - Metadata configurată pentru vizibilitate maximă
+
+## 🏢 Informații Companie
+
+| | |
+|---|---|
+| **Denumire** | S.C. AMIDAMARU S.R.L. |
+| **Sediu** | Str. Iulia, nr. 2, Arad, Comuna Vladimirescu, România |
+| **CUI** | 39823843 |
+| **Reg. Comerț** | J2/1413/2018 |
+
+## 🚀 Instalare & Rulare
 
 ```bash
+# Clonare repository
+git clone https://github.com/[username]/web-amidamaru.git
+
+# Navigare în director
+cd web-amidamaru
+
+# Instalare dependențe
+npm install
+
+# Rulare în mod development
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build pentru producție
+npm run build
+
+# Rulare build producție
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Deschide [http://localhost:3000](http://localhost:3000) în browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework:** Next.js 16.1 (App Router)
+- **UI Library:** React 19
+- **Styling:** Tailwind CSS 4
+- **Language:** TypeScript 5
+- **Fonts:** Bebas Neue, Rajdhani (Google Fonts)
 
-## Learn More
+## 📁 Structura Proiectului
 
-To learn more about Next.js, take a look at the following resources:
+```
+web-amidamaru/
+├── app/
+│   ├── globals.css      # Stiluri globale & tema
+│   ├── layout.tsx       # Layout principal
+│   └── page.tsx         # Pagina principală
+├── public/
+│   ├── images/          # Imagini flotă & sediu
+│   └── logo.png         # Logo companie
+└── ...
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 Licență
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Proiect privat - Toate drepturile rezervate © 2025 S.C. AMIDAMARU S.R.L.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<div align="center">
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Dezvoltat cu ❤️ pentru AMIDAMARU**
+
+🌐 [amidamaru.ro](https://amidamaru.ro)
+
+</div>
