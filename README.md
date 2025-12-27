@@ -36,9 +36,9 @@ Website profesional pentru **AMIDAMARU**, o companie de transport rutier interna
 | | |
 |---|---|
 | **Denumire** | S.C. AMIDAMARU S.R.L. |
-| **Sediu** | Str. Iulia, nr. 2, Arad, Comuna Vladimirescu, România |
-| **CUI** | 39823843 |
-| **Reg. Comerț** | J2/1413/2018 |
+| **Sediu** | Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7), Arad, România |
+| **CUI** | RO18556425 |
+| **Reg. Comerț** | J02/623/2006 |
 
 ## 🚀 Instalare & Rulare
 

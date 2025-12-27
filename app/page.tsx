@@ -529,8 +529,8 @@ function CompanySection() {
 
   const companyInfo = [
     { label: t('company.name'), value: 'S.C. AMIDAMARU S.R.L.' },
-    { label: t('company.cui'), value: '39823843' },
-    { label: t('company.regcom'), value: 'J2/1413/2018' },
+    { label: t('company.cui'), value: 'RO18556425' },
+    { label: t('company.regcom'), value: 'J02/623/2006' },
     { label: t('company.address'), value: t('company.address.value') },
   ];
 
@@ -905,8 +905,8 @@ function Footer() {
             
             {/* Company Info */}
             <div className="mt-6 pt-6 border-t border-zinc-200">
-              <p className="text-zinc-500 text-xs">CUI: 39823843</p>
-              <p className="text-zinc-500 text-xs">Reg. Com.: J2/1413/2018</p>
+              <p className="text-zinc-500 text-xs">CUI: RO18556425</p>
+              <p className="text-zinc-500 text-xs">Reg. Com.: J02/623/2006</p>
             </div>
           </div>
         </div>

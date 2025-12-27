@@ -131,7 +131,7 @@ const jsonLd = {
   email: "office@amidamaru.ro",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Str. Iulia, Nr. 2",
+    streetAddress: "Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7)",
     addressLocality: "Vladimirescu",
     addressRegion: "Arad",
     postalCode: "310410",
@@ -172,8 +172,8 @@ const jsonLd = {
     "@type": "Organization",
     name: "S.C. AMIDAMARU S.R.L.",
   },
-  foundingDate: "2018",
-  taxID: "39823843",
+  foundingDate: "2006",
+  taxID: "RO18556425",
   legalName: "S.C. AMIDAMARU S.R.L.",
   naics: "484121",
 };
@@ -193,7 +193,7 @@ export default function RootLayout({
       </head>
       <body className={`${bebasNeue.variable} ${rajdhani.variable} antialiased`}>
         <LanguageProvider>
-          {children}
+        {children}
         </LanguageProvider>
       </body>
     </html>
