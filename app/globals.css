@@ -31,7 +31,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-display: var(--font-bebas);
-  --font-body: var(--font-rajdhani);
+  --font-body: var(--font-nunito);
 }
 
 * {
@@ -45,7 +45,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-rajdhani), system-ui, sans-serif;
+  font-family: var(--font-nunito), system-ui, sans-serif;
   overflow-x: hidden;
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 .font-body {
-  font-family: var(--font-rajdhani), system-ui, sans-serif;
+  font-family: var(--font-nunito), system-ui, sans-serif;
 }
 
 /* Gradient Backgrounds */

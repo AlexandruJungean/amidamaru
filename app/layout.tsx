@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, Rajdhani } from "next/font/google";
+import { Bebas_Neue, Nunito } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "./LanguageContext";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
   variable: "--font-bebas",
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
 });
 
-const rajdhani = Rajdhani({
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-rajdhani",
-  subsets: ["latin"],
+const nunito = Nunito({
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-nunito",
+  subsets: ["latin", "latin-ext"],
 });
 
 export const metadata: Metadata = {
@@ -191,7 +191,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${bebasNeue.variable} ${rajdhani.variable} antialiased`}>
+      <body className={`${bebasNeue.variable} ${nunito.variable} antialiased`}>
         <LanguageProvider>
         {children}
         </LanguageProvider>
