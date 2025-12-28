@@ -287,7 +287,7 @@ function StatsSection() {
   const { t } = useLanguage();
   
   const stats = [
-    { number: '18+', label: t('about.experience') },
+    { number: '20+', label: t('about.experience') },
     { number: '14+', label: t('about.countries') },
     { number: '16+', label: t('about.trucks') },
     { number: '5000+', label: t('about.deliveries') },

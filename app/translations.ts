@@ -54,7 +54,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'services.express.title': 'Express Delivery',
     'services.express.description': 'Time-critical shipments delivered with priority. Fast and reliable express transport services.',
     'services.logistics.title': 'Logistics Solutions',
-    'services.logistics.description': 'End-to-end logistics management including warehousing, distribution, and supply chain optimization.',
+    'services.logistics.description': 'Comprehensive logistics management including distribution planning, route optimization, and supply chain coordination.',
     
     // Fleet Section
     'fleet.title': 'OUR FLEET',
@@ -130,7 +130,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'services.express.title': 'Livrare Express',
     'services.express.description': 'Transporturi urgente livrate cu prioritate. Servicii de transport express rapide și fiabile.',
     'services.logistics.title': 'Soluții Logistice',
-    'services.logistics.description': 'Management logistic complet incluzând depozitare, distribuție și optimizarea lanțului de aprovizionare.',
+    'services.logistics.description': 'Management logistic complet incluzând planificarea distribuției, optimizarea rutelor și coordonarea lanțului de aprovizionare.',
     
     // Fleet Section
     'fleet.title': 'FLOTA NOASTRĂ',
@@ -206,7 +206,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'services.express.title': 'Expresslieferung',
     'services.express.description': 'Zeitkritische Sendungen mit Priorität geliefert. Schnelle und zuverlässige Expresstransportdienste.',
     'services.logistics.title': 'Logistiklösungen',
-    'services.logistics.description': 'End-to-End Logistikmanagement einschließlich Lagerhaltung, Distribution und Supply-Chain-Optimierung.',
+    'services.logistics.description': 'Umfassendes Logistikmanagement einschließlich Distributionsplanung, Routenoptimierung und Supply-Chain-Koordination.',
     
     // Fleet Section
     'fleet.title': 'UNSERE FLOTTE',
@@ -282,7 +282,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'services.express.title': 'Livraison Express',
     'services.express.description': 'Envois urgents livrés en priorité. Services de transport express rapides et fiables.',
     'services.logistics.title': 'Solutions Logistiques',
-    'services.logistics.description': 'Gestion logistique de bout en bout incluant entreposage, distribution et optimisation de la chaîne d\'approvisionnement.',
+    'services.logistics.description': 'Gestion logistique complète incluant planification de la distribution, optimisation des itinéraires et coordination de la chaîne d\'approvisionnement.',
     
     // Fleet Section
     'fleet.title': 'NOTRE FLOTTE',
@@ -358,7 +358,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'services.express.title': 'Consegna Express',
     'services.express.description': 'Spedizioni urgenti consegnate con priorità. Servizi di trasporto espresso veloci e affidabili.',
     'services.logistics.title': 'Soluzioni Logistiche',
-    'services.logistics.description': 'Gestione logistica end-to-end incluso magazzinaggio, distribuzione e ottimizzazione della supply chain.',
+    'services.logistics.description': 'Gestione logistica completa inclusa pianificazione della distribuzione, ottimizzazione dei percorsi e coordinamento della supply chain.',
     
     // Fleet Section
     'fleet.title': 'LA NOSTRA FLOTTA',
@@ -434,7 +434,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'services.express.title': 'Entrega Express',
     'services.express.description': 'Envíos urgentes entregados con prioridad. Servicios de transporte express rápidos y confiables.',
     'services.logistics.title': 'Soluciones Logísticas',
-    'services.logistics.description': 'Gestión logística integral incluyendo almacenamiento, distribución y optimización de la cadena de suministro.',
+    'services.logistics.description': 'Gestión logística integral incluyendo planificación de distribución, optimización de rutas y coordinación de la cadena de suministro.',
     
     // Fleet Section
     'fleet.title': 'NUESTRA FLOTA',
@@ -510,7 +510,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'services.express.title': 'Expresní Doručení',
     'services.express.description': 'Časově kritické zásilky doručené s prioritou. Rychlé a spolehlivé expresní dopravní služby.',
     'services.logistics.title': 'Logistická Řešení',
-    'services.logistics.description': 'Komplexní logistický management včetně skladování, distribuce a optimalizace dodavatelského řetězce.',
+    'services.logistics.description': 'Komplexní logistický management včetně plánování distribuce, optimalizace tras a koordinace dodavatelského řetězce.',
     
     // Fleet Section
     'fleet.title': 'NAŠE FLOTILA',
@@ -586,7 +586,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'services.express.title': 'Dostawa Ekspresowa',
     'services.express.description': 'Pilne przesyłki dostarczane priorytetowo. Szybkie i niezawodne usługi transportu ekspresowego.',
     'services.logistics.title': 'Rozwiązania Logistyczne',
-    'services.logistics.description': 'Kompleksowe zarządzanie logistyką obejmujące magazynowanie, dystrybucję i optymalizację łańcucha dostaw.',
+    'services.logistics.description': 'Kompleksowe zarządzanie logistyką obejmujące planowanie dystrybucji, optymalizację tras i koordynację łańcucha dostaw.',
     
     // Fleet Section
     'fleet.title': 'NASZA FLOTA',
@@ -662,7 +662,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'services.express.title': 'Expressz Szállítás',
     'services.express.description': 'Időérzékeny szállítmányok prioritással kézbesítve. Gyors és megbízható expressz szállítási szolgáltatások.',
     'services.logistics.title': 'Logisztikai Megoldások',
-    'services.logistics.description': 'Teljes körű logisztikai menedzsment, beleértve a raktározást, elosztást és ellátási lánc optimalizálást.',
+    'services.logistics.description': 'Teljes körű logisztikai menedzsment, beleértve a disztribúció tervezését, útvonal optimalizálást és ellátási lánc koordinációt.',
     
     // Fleet Section
     'fleet.title': 'FLOTTÁNK',
