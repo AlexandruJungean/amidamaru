@@ -29,16 +29,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     
     // Hero Section
-    'hero.title': 'INTERNATIONAL FREIGHT TRANSPORT',
-    'hero.subtitle': 'Professional road transport services across Europe',
-    'hero.description': 'With a modern fleet and years of experience, we deliver your cargo safely and on time to any destination in Europe.',
+    'hero.title': 'YOUR PARTNER IN INTEGRATED LOGISTICS',
+    'hero.subtitle': 'Professionalism, quality and reliability in freight transport',
+    'hero.description': 'AMIDAMARU is your partner in integrated logistics services with extensive expertise in efficient freight transport. We are your trusted partner offering safety and efficiency in transporting your goods anywhere in Europe.',
     'hero.cta.quote': 'Request Quote',
     'hero.cta.contact': 'Contact Us',
     
     // About Section
     'about.title': 'ABOUT AMIDAMARU',
-    'about.subtitle': 'Your trusted partner in international transport',
-    'about.description': 'S.C. AMIDAMARU S.R.L. is a professional freight transport company based in Arad, Romania. We specialize in international road transport, offering reliable and efficient logistics solutions across Europe.',
+    'about.subtitle': 'The reliable solution for complete road transport',
+    'about.description': 'AMIDAMARU was founded in 2006 and since then we have been providing top quality logistics services for general cargo. We have developed over the years to support a wide range of clients in freight transport throughout Europe. With the support and help of our partners and clients, we increase transport volume every year, responding promptly, seriously and with the highest quality to their requirements and needs.',
     'about.experience': 'Years of Experience',
     'about.countries': 'European Countries',
     'about.trucks': 'Modern Trucks',
@@ -46,7 +46,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'OUR SERVICES',
-    'services.subtitle': 'Comprehensive transport solutions tailored to your needs',
+    'services.subtitle': 'We understand that our clients have commitments to their own customers. We know the importance of deadlines and strive in every transport to fulfill our commitment to clients, allowing them to meet their own deadlines and contracts.',
     'services.ftl.title': 'Full Truck Load (FTL)',
     'services.ftl.description': 'Complete truck dedicated to your cargo. Ideal for large shipments requiring exclusive transport.',
     'services.ltl.title': 'Less Than Truck Load (LTL)',
@@ -105,16 +105,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     
     // Hero Section
-    'hero.title': 'TRANSPORT INTERNAȚIONAL DE MĂRFURI',
-    'hero.subtitle': 'Servicii profesionale de transport rutier în toată Europa',
-    'hero.description': 'Cu o flotă modernă și ani de experiență, livrăm marfa dumneavoastră în siguranță și la timp în orice destinație din Europa.',
+    'hero.title': 'PARTENERUL DUMNEAVOASTRĂ ÎN SERVICII LOGISTICE',
+    'hero.subtitle': 'Profesionalism, calitate și seriozitate în transportul mărfurilor',
+    'hero.description': 'AMIDAMARU este partenerul dumneavoastră în servicii logistice integrate cu o expertiză îndelungată în transportul eficient de mărfuri. Suntem un partener de încredere care vă oferă siguranță și eficiență în transportul mărfurilor dumneavoastră, oriunde în Europa.',
     'hero.cta.quote': 'Cere Ofertă',
     'hero.cta.contact': 'Contactează-ne',
     
     // About Section
     'about.title': 'DESPRE AMIDAMARU',
-    'about.subtitle': 'Partenerul tău de încredere în transport internațional',
-    'about.description': 'S.C. AMIDAMARU S.R.L. este o companie profesională de transport de mărfuri cu sediul în Arad, România. Suntem specializați în transport rutier internațional, oferind soluții logistice fiabile și eficiente în toată Europa.',
+    'about.subtitle': 'Soluția sigură pentru transporturi rutiere complete',
+    'about.description': 'Compania AMIDAMARU a fost fondată în anul 2006 și de atunci oferim servicii logistice de cea mai bună calitate pentru mărfuri generale. Ne-am dezvoltat de-a lungul anilor pentru a sprijini o gamă variată de clienți în transportul mărfurilor, în întreaga Europă. Cu susținerea și ajutorul partenerilor și clienților noștri dezvoltăm în fiecare an volumul de transport, răspundem prompt, serios și cu cea mai bună calitate la cerințele și nevoile acestora.',
     'about.experience': 'Ani de Experiență',
     'about.countries': 'Țări Europene',
     'about.trucks': 'Camioane Moderne',
@@ -122,7 +122,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'SERVICIILE NOASTRE',
-    'services.subtitle': 'Soluții complete de transport adaptate nevoilor tale',
+    'services.subtitle': 'Înțelegem că clienții și partenerii noștri au la rândul lor angajamente față de clienții lor. Cunoaștem importanța termenelor și ne propunem în cadrul fiecărui transport să ne îndeplinim angajamentul față de clienți pentru a le permite acestora să își respecte termenele și contractele.',
     'services.ftl.title': 'Transport Complet (FTL)',
     'services.ftl.description': 'Camion complet dedicat mărfii tale. Ideal pentru transporturi mari care necesită transport exclusiv.',
     'services.ltl.title': 'Transport Grupaj (LTL)',
@@ -181,16 +181,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Kontakt',
     
     // Hero Section
-    'hero.title': 'INTERNATIONALER GÜTERTRANSPORT',
-    'hero.subtitle': 'Professionelle Straßentransportdienste in ganz Europa',
-    'hero.description': 'Mit einer modernen Flotte und jahrelanger Erfahrung liefern wir Ihre Fracht sicher und pünktlich an jeden Ort in Europa.',
+    'hero.title': 'IHR PARTNER FÜR INTEGRIERTE LOGISTIK',
+    'hero.subtitle': 'Professionalität, Qualität und Zuverlässigkeit im Gütertransport',
+    'hero.description': 'AMIDAMARU ist Ihr Partner für integrierte Logistikdienstleistungen mit langjähriger Expertise im effizienten Gütertransport. Wir sind Ihr vertrauenswürdiger Partner, der Ihnen Sicherheit und Effizienz beim Transport Ihrer Waren überall in Europa bietet.',
     'hero.cta.quote': 'Angebot Anfordern',
     'hero.cta.contact': 'Kontaktieren Sie Uns',
     
     // About Section
     'about.title': 'ÜBER AMIDAMARU',
-    'about.subtitle': 'Ihr zuverlässiger Partner im internationalen Transport',
-    'about.description': 'S.C. AMIDAMARU S.R.L. ist ein professionelles Gütertransportunternehmen mit Sitz in Arad, Rumänien. Wir sind spezialisiert auf internationalen Straßentransport und bieten zuverlässige und effiziente Logistiklösungen in ganz Europa.',
+    'about.subtitle': 'Die zuverlässige Lösung für komplette Straßentransporte',
+    'about.description': 'AMIDAMARU wurde 2006 gegründet und bietet seitdem erstklassige Logistikdienstleistungen für allgemeine Güter. Wir haben uns im Laufe der Jahre entwickelt, um eine Vielzahl von Kunden beim Gütertransport in ganz Europa zu unterstützen. Mit der Unterstützung unserer Partner und Kunden steigern wir jedes Jahr das Transportvolumen und reagieren prompt, seriös und mit höchster Qualität auf deren Anforderungen und Bedürfnisse.',
     'about.experience': 'Jahre Erfahrung',
     'about.countries': 'Europäische Länder',
     'about.trucks': 'Moderne LKWs',
@@ -198,7 +198,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'UNSERE DIENSTLEISTUNGEN',
-    'services.subtitle': 'Umfassende Transportlösungen nach Ihren Bedürfnissen',
+    'services.subtitle': 'Wir verstehen, dass unsere Kunden Verpflichtungen gegenüber ihren eigenen Kunden haben. Wir kennen die Bedeutung von Fristen und streben bei jedem Transport danach, unsere Verpflichtungen zu erfüllen, damit unsere Kunden ihre eigenen Termine und Verträge einhalten können.',
     'services.ftl.title': 'Komplettladung (FTL)',
     'services.ftl.description': 'Kompletter LKW für Ihre Fracht. Ideal für große Sendungen, die exklusiven Transport erfordern.',
     'services.ltl.title': 'Teilladung (LTL)',
@@ -257,16 +257,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     
     // Hero Section
-    'hero.title': 'TRANSPORT INTERNATIONAL DE MARCHANDISES',
-    'hero.subtitle': 'Services de transport routier professionnels à travers l\'Europe',
-    'hero.description': 'Avec une flotte moderne et des années d\'expérience, nous livrons vos marchandises en toute sécurité et à temps vers toute destination en Europe.',
+    'hero.title': 'VOTRE PARTENAIRE EN LOGISTIQUE INTÉGRÉE',
+    'hero.subtitle': 'Professionnalisme, qualité et fiabilité dans le transport de marchandises',
+    'hero.description': 'AMIDAMARU est votre partenaire en services logistiques intégrés avec une expertise approfondie dans le transport efficace de marchandises. Nous sommes votre partenaire de confiance offrant sécurité et efficacité dans le transport de vos marchandises partout en Europe.',
     'hero.cta.quote': 'Demander un Devis',
     'hero.cta.contact': 'Nous Contacter',
     
     // About Section
     'about.title': 'À PROPOS D\'AMIDAMARU',
-    'about.subtitle': 'Votre partenaire de confiance dans le transport international',
-    'about.description': 'S.C. AMIDAMARU S.R.L. est une entreprise professionnelle de transport de marchandises basée à Arad, Roumanie. Nous sommes spécialisés dans le transport routier international, offrant des solutions logistiques fiables et efficaces à travers l\'Europe.',
+    'about.subtitle': 'La solution fiable pour les transports routiers complets',
+    'about.description': 'AMIDAMARU a été fondée en 2006 et depuis lors, nous fournissons des services logistiques de haute qualité pour les marchandises générales. Nous nous sommes développés au fil des années pour accompagner une grande variété de clients dans le transport de marchandises à travers toute l\'Europe. Avec le soutien de nos partenaires et clients, nous augmentons chaque année notre volume de transport, répondant rapidement, sérieusement et avec la meilleure qualité à leurs exigences et besoins.',
     'about.experience': 'Années d\'Expérience',
     'about.countries': 'Pays Européens',
     'about.trucks': 'Camions Modernes',
@@ -274,7 +274,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'NOS SERVICES',
-    'services.subtitle': 'Solutions de transport complètes adaptées à vos besoins',
+    'services.subtitle': 'Nous comprenons que nos clients ont des engagements envers leurs propres clients. Nous connaissons l\'importance des délais et nous nous efforçons dans chaque transport de remplir notre engagement envers nos clients pour leur permettre de respecter leurs propres délais et contrats.',
     'services.ftl.title': 'Chargement Complet (FTL)',
     'services.ftl.description': 'Camion complet dédié à votre cargaison. Idéal pour les gros envois nécessitant un transport exclusif.',
     'services.ltl.title': 'Groupage (LTL)',
@@ -333,16 +333,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contatti',
     
     // Hero Section
-    'hero.title': 'TRASPORTO MERCI INTERNAZIONALE',
-    'hero.subtitle': 'Servizi di trasporto su strada professionali in tutta Europa',
-    'hero.description': 'Con una flotta moderna e anni di esperienza, consegniamo le vostre merci in sicurezza e puntualmente in qualsiasi destinazione in Europa.',
+    'hero.title': 'IL VOSTRO PARTNER NELLA LOGISTICA INTEGRATA',
+    'hero.subtitle': 'Professionalità, qualità e affidabilità nel trasporto merci',
+    'hero.description': 'AMIDAMARU è il vostro partner nei servizi logistici integrati con una vasta esperienza nel trasporto efficiente di merci. Siamo il vostro partner di fiducia che offre sicurezza ed efficienza nel trasporto delle vostre merci ovunque in Europa.',
     'hero.cta.quote': 'Richiedi Preventivo',
     'hero.cta.contact': 'Contattaci',
     
     // About Section
     'about.title': 'CHI È AMIDAMARU',
-    'about.subtitle': 'Il vostro partner affidabile nel trasporto internazionale',
-    'about.description': 'S.C. AMIDAMARU S.R.L. è un\'azienda professionale di trasporto merci con sede ad Arad, Romania. Siamo specializzati nel trasporto su strada internazionale, offrendo soluzioni logistiche affidabili ed efficienti in tutta Europa.',
+    'about.subtitle': 'La soluzione affidabile per trasporti stradali completi',
+    'about.description': 'AMIDAMARU è stata fondata nel 2006 e da allora forniamo servizi logistici di altissima qualità per merci generali. Ci siamo sviluppati nel corso degli anni per supportare una vasta gamma di clienti nel trasporto merci in tutta Europa. Con il supporto dei nostri partner e clienti, aumentiamo ogni anno il volume di trasporto, rispondendo prontamente, seriamente e con la massima qualità alle loro esigenze e necessità.',
     'about.experience': 'Anni di Esperienza',
     'about.countries': 'Paesi Europei',
     'about.trucks': 'Camion Moderni',
@@ -350,7 +350,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'I NOSTRI SERVIZI',
-    'services.subtitle': 'Soluzioni di trasporto complete su misura per le vostre esigenze',
+    'services.subtitle': 'Comprendiamo che i nostri clienti hanno impegni verso i propri clienti. Conosciamo l\'importanza delle scadenze e ci impegniamo in ogni trasporto a rispettare il nostro impegno verso i clienti per permettere loro di rispettare i propri termini e contratti.',
     'services.ftl.title': 'Carico Completo (FTL)',
     'services.ftl.description': 'Camion completo dedicato al vostro carico. Ideale per grandi spedizioni che richiedono trasporto esclusivo.',
     'services.ltl.title': 'Groupage (LTL)',
@@ -409,16 +409,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contacto',
     
     // Hero Section
-    'hero.title': 'TRANSPORTE INTERNACIONAL DE MERCANCÍAS',
-    'hero.subtitle': 'Servicios profesionales de transporte por carretera en toda Europa',
-    'hero.description': 'Con una flota moderna y años de experiencia, entregamos su carga de forma segura y puntual a cualquier destino en Europa.',
+    'hero.title': 'SU SOCIO EN LOGÍSTICA INTEGRADA',
+    'hero.subtitle': 'Profesionalismo, calidad y seriedad en el transporte de mercancías',
+    'hero.description': 'AMIDAMARU es su socio en servicios logísticos integrados con amplia experiencia en el transporte eficiente de mercancías. Somos su socio de confianza que ofrece seguridad y eficiencia en el transporte de sus mercancías en cualquier lugar de Europa.',
     'hero.cta.quote': 'Solicitar Presupuesto',
     'hero.cta.contact': 'Contáctenos',
     
     // About Section
     'about.title': 'SOBRE AMIDAMARU',
-    'about.subtitle': 'Su socio de confianza en transporte internacional',
-    'about.description': 'S.C. AMIDAMARU S.R.L. es una empresa profesional de transporte de mercancías con sede en Arad, Rumania. Nos especializamos en transporte por carretera internacional, ofreciendo soluciones logísticas fiables y eficientes en toda Europa.',
+    'about.subtitle': 'La solución segura para transportes por carretera completos',
+    'about.description': 'AMIDAMARU fue fundada en 2006 y desde entonces ofrecemos servicios logísticos de la más alta calidad para mercancías generales. Nos hemos desarrollado a lo largo de los años para apoyar a una amplia gama de clientes en el transporte de mercancías en toda Europa. Con el apoyo de nuestros socios y clientes, aumentamos cada año el volumen de transporte, respondiendo de manera rápida, seria y con la mejor calidad a sus requerimientos y necesidades.',
     'about.experience': 'Años de Experiencia',
     'about.countries': 'Países Europeos',
     'about.trucks': 'Camiones Modernos',
@@ -426,7 +426,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'NUESTROS SERVICIOS',
-    'services.subtitle': 'Soluciones de transporte integrales adaptadas a sus necesidades',
+    'services.subtitle': 'Entendemos que nuestros clientes tienen compromisos con sus propios clientes. Conocemos la importancia de los plazos y nos esforzamos en cada transporte por cumplir nuestro compromiso con los clientes para permitirles cumplir con sus propios plazos y contratos.',
     'services.ftl.title': 'Carga Completa (FTL)',
     'services.ftl.description': 'Camión completo dedicado a su carga. Ideal para envíos grandes que requieren transporte exclusivo.',
     'services.ltl.title': 'Carga Parcial (LTL)',
@@ -485,16 +485,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Kontakt',
     
     // Hero Section
-    'hero.title': 'MEZINÁRODNÍ NÁKLADNÍ DOPRAVA',
-    'hero.subtitle': 'Profesionální silniční dopravní služby po celé Evropě',
-    'hero.description': 'S moderní flotilou a letitými zkušenostmi dodáváme váš náklad bezpečně a včas na jakékoli místo v Evropě.',
+    'hero.title': 'VÁŠ PARTNER V INTEGROVANÉ LOGISTICE',
+    'hero.subtitle': 'Profesionalita, kvalita a spolehlivost v přepravě zboží',
+    'hero.description': 'AMIDAMARU je váš partner v integrovaných logistických službách s rozsáhlými zkušenostmi v efektivní přepravě zboží. Jsme váš důvěryhodný partner nabízející bezpečnost a efektivitu při přepravě vašeho zboží kdekoli v Evropě.',
     'hero.cta.quote': 'Požádat o Nabídku',
     'hero.cta.contact': 'Kontaktujte Nás',
     
     // About Section
     'about.title': 'O SPOLEČNOSTI AMIDAMARU',
-    'about.subtitle': 'Váš spolehlivý partner v mezinárodní dopravě',
-    'about.description': 'S.C. AMIDAMARU S.R.L. je profesionální nákladní dopravní společnost se sídlem v Aradu, Rumunsko. Specializujeme se na mezinárodní silniční dopravu a nabízíme spolehlivá a efektivní logistická řešení po celé Evropě.',
+    'about.subtitle': 'Spolehlivé řešení pro kompletní silniční přepravu',
+    'about.description': 'AMIDAMARU byla založena v roce 2006 a od té doby poskytujeme logistické služby nejvyšší kvality pro všeobecné zboží. V průběhu let jsme se rozvinuli, abychom podpořili širokou škálu klientů v přepravě zboží po celé Evropě. S podporou našich partnerů a klientů každoročně zvyšujeme objem přepravy a reagujeme rychle, seriózně a s nejvyšší kvalitou na jejich požadavky a potřeby.',
     'about.experience': 'Let Zkušeností',
     'about.countries': 'Evropských Zemí',
     'about.trucks': 'Moderních Kamionů',
@@ -502,7 +502,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'NAŠE SLUŽBY',
-    'services.subtitle': 'Komplexní dopravní řešení přizpůsobená vašim potřebám',
+    'services.subtitle': 'Chápeme, že naši klienti mají závazky vůči svým vlastním zákazníkům. Známe důležitost termínů a v každé přepravě se snažíme splnit náš závazek vůči klientům, abychom jim umožnili dodržet jejich vlastní termíny a smlouvy.',
     'services.ftl.title': 'Celokamionová Přeprava (FTL)',
     'services.ftl.description': 'Kompletní kamion věnovaný vašemu nákladu. Ideální pro velké zásilky vyžadující exkluzivní přepravu.',
     'services.ltl.title': 'Částečná Přeprava (LTL)',
@@ -561,16 +561,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Kontakt',
     
     // Hero Section
-    'hero.title': 'MIĘDZYNARODOWY TRANSPORT TOWAROWY',
-    'hero.subtitle': 'Profesjonalne usługi transportu drogowego w całej Europie',
-    'hero.description': 'Dzięki nowoczesnej flocie i wieloletniemu doświadczeniu dostarczamy Twój ładunek bezpiecznie i na czas do każdego miejsca w Europie.',
+    'hero.title': 'TWÓJ PARTNER W ZINTEGROWANEJ LOGISTYCE',
+    'hero.subtitle': 'Profesjonalizm, jakość i rzetelność w transporcie towarów',
+    'hero.description': 'AMIDAMARU jest Twoim partnerem w zintegrowanych usługach logistycznych z wieloletnim doświadczeniem w efektywnym transporcie towarów. Jesteśmy Twoim zaufanym partnerem oferującym bezpieczeństwo i efektywność w transporcie Twoich towarów w całej Europie.',
     'hero.cta.quote': 'Zapytaj o Ofertę',
     'hero.cta.contact': 'Skontaktuj się',
     
     // About Section
     'about.title': 'O FIRMIE AMIDAMARU',
-    'about.subtitle': 'Twój zaufany partner w transporcie międzynarodowym',
-    'about.description': 'S.C. AMIDAMARU S.R.L. to profesjonalna firma transportowa z siedzibą w Arad, Rumunia. Specjalizujemy się w międzynarodowym transporcie drogowym, oferując niezawodne i wydajne rozwiązania logistyczne w całej Europie.',
+    'about.subtitle': 'Pewne rozwiązanie dla kompletnych transportów drogowych',
+    'about.description': 'AMIDAMARU została założona w 2006 roku i od tego czasu świadczymy usługi logistyczne najwyższej jakości dla ładunków ogólnych. Przez lata rozwijaliśmy się, aby wspierać szeroką gamę klientów w transporcie towarów w całej Europie. Dzięki wsparciu naszych partnerów i klientów co roku zwiększamy wolumen transportu, reagując szybko, poważnie i z najwyższą jakością na ich wymagania i potrzeby.',
     'about.experience': 'Lat Doświadczenia',
     'about.countries': 'Krajów Europejskich',
     'about.trucks': 'Nowoczesnych Ciężarówek',
@@ -578,7 +578,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'NASZE USŁUGI',
-    'services.subtitle': 'Kompleksowe rozwiązania transportowe dostosowane do Twoich potrzeb',
+    'services.subtitle': 'Rozumiemy, że nasi klienci mają zobowiązania wobec swoich własnych klientów. Znamy znaczenie terminów i dążymy w każdym transporcie do wypełnienia naszego zobowiązania wobec klientów, aby umożliwić im dotrzymanie własnych terminów i umów.',
     'services.ftl.title': 'Pełny Ładunek (FTL)',
     'services.ftl.description': 'Cała ciężarówka dedykowana Twojemu ładunkowi. Idealne dla dużych przesyłek wymagających transportu na wyłączność.',
     'services.ltl.title': 'Ładunek Częściowy (LTL)',
@@ -637,16 +637,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Kapcsolat',
     
     // Hero Section
-    'hero.title': 'NEMZETKÖZI ÁRUSZÁLLÍTÁS',
-    'hero.subtitle': 'Professzionális közúti szállítási szolgáltatások Európa-szerte',
-    'hero.description': 'Modern flottával és évek tapasztalatával biztonságosan és időben szállítjuk rakományát Európa bármely pontjára.',
+    'hero.title': 'PARTNERE AZ INTEGRÁLT LOGISZTIKÁBAN',
+    'hero.subtitle': 'Professzionalizmus, minőség és megbízhatóság az áruszállításban',
+    'hero.description': 'Az AMIDAMARU az Ön partnere az integrált logisztikai szolgáltatásokban, széleskörű szakértelemmel a hatékony áruszállításban. Megbízható partnerként biztonságot és hatékonyságot kínálunk árui szállításában Európa bármely pontjára.',
     'hero.cta.quote': 'Ajánlatkérés',
     'hero.cta.contact': 'Kapcsolatfelvétel',
     
     // About Section
     'about.title': 'AZ AMIDAMARU-RÓL',
-    'about.subtitle': 'Megbízható partnere a nemzetközi szállításban',
-    'about.description': 'Az S.C. AMIDAMARU S.R.L. egy professzionális áruszállító vállalat, amelynek székhelye Arad, Románia. Nemzetközi közúti szállításra specializálódtunk, megbízható és hatékony logisztikai megoldásokat kínálva Európa-szerte.',
+    'about.subtitle': 'Megbízható megoldás a teljes közúti szállításhoz',
+    'about.description': 'Az AMIDAMARU 2006-ban alakult, és azóta a legmagasabb minőségű logisztikai szolgáltatásokat nyújtjuk általános áruk szállítására. Az évek során fejlődtünk, hogy az ügyfelek széles körét támogassuk az áruszállításban Európa-szerte. Partnereink és ügyfeleink támogatásával évről évre növeljük a szállítási volument, gyorsan, komolyan és a legmagasabb minőségben reagálva igényeikre és szükségleteikre.',
     'about.experience': 'Év Tapasztalat',
     'about.countries': 'Európai Ország',
     'about.trucks': 'Modern Teherautó',
@@ -654,7 +654,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'SZOLGÁLTATÁSAINK',
-    'services.subtitle': 'Átfogó szállítási megoldások az Ön igényeire szabva',
+    'services.subtitle': 'Megértjük, hogy ügyfeleinknek kötelezettségeik vannak saját ügyfeleik felé. Ismerjük a határidők fontosságát, és minden szállításnál törekszünk kötelezettségeink teljesítésére, hogy ügyfeleink betarthassák saját határideiket és szerződéseiket.',
     'services.ftl.title': 'Teljes Rakományú Szállítás (FTL)',
     'services.ftl.description': 'Teljes teherautó az Ön rakományának. Ideális nagy szállítmányokhoz, amelyek kizárólagos szállítást igényelnek.',
     'services.ltl.title': 'Részrakományos Szállítás (LTL)',
