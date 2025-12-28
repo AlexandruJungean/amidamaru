@@ -36,7 +36,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-bold mb-4 text-zinc-900">1. Operator de Date</h2>
             <p className="text-zinc-600">
               <strong className="text-zinc-900">S.C. AMIDAMARU S.R.L.</strong>, operator de date cu caracter personal, 
-              cu sediul în Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7), Arad, România, înregistrată la Registrul 
+              cu sediul în Str. Centura Nord Km 541+150 (DN 7), Arad, România, înregistrată la Registrul 
               Comerțului sub nr. <strong className="text-zinc-900">J02/623/2006</strong>, cod fiscal <strong className="text-zinc-900">RO18556425</strong>, 
               este responsabilă de prelucrarea datelor dvs. cu caracter personal pe care le colectăm direct de la dvs. sau din alte surse.
             </p>
@@ -118,7 +118,7 @@ export default function PrivacyPolicy() {
             <ul className="list-none text-zinc-600 space-y-2 mt-4">
               <li><strong className="text-zinc-900">Email:</strong> office@amidamaru.ro</li>
               <li><strong className="text-zinc-900">Telefon:</strong> +40 728 174 730</li>
-              <li><strong className="text-zinc-900">Adresă:</strong> Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7), Arad, România</li>
+              <li><strong className="text-zinc-900">Adresă:</strong> Str. Centura Nord Km 541+150 (DN 7), Arad, România</li>
             </ul>
           </section>
 

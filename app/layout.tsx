@@ -131,7 +131,7 @@ const jsonLd = {
   email: "office@amidamaru.ro",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7)",
+    streetAddress: "Str. Centura Nord Km 541+150 (DN 7)",
     addressLocality: "Vladimirescu",
     addressRegion: "Arad",
     postalCode: "310410",

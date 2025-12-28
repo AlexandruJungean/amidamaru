@@ -83,7 +83,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'company.cui': 'Tax ID (CUI)',
     'company.regcom': 'Trade Register',
     'company.address': 'Registered Address',
-    'company.address.value': 'Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7), Arad, Romania',
+    'company.address.value': 'Str. Centura Nord Km 541+150 (DN 7), Arad, Romania',
     
     // Footer
     'footer.rights': 'All rights reserved.',
@@ -159,7 +159,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'company.cui': 'Cod Fiscal (CUI)',
     'company.regcom': 'Registrul Comerțului',
     'company.address': 'Sediu Social',
-    'company.address.value': 'Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7), Arad, România',
+    'company.address.value': 'Str. Centura Nord Km 541+150 (DN 7), Arad, România',
     
     // Footer
     'footer.rights': 'Toate drepturile rezervate.',
@@ -235,7 +235,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'company.cui': 'Steuer-ID (CUI)',
     'company.regcom': 'Handelsregister',
     'company.address': 'Firmensitz',
-    'company.address.value': 'Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7), Arad, Rumänien',
+    'company.address.value': 'Str. Centura Nord Km 541+150 (DN 7), Arad, Rumänien',
     
     // Footer
     'footer.rights': 'Alle Rechte vorbehalten.',
@@ -311,7 +311,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'company.cui': 'Numéro Fiscal (CUI)',
     'company.regcom': 'Registre du Commerce',
     'company.address': 'Siège Social',
-    'company.address.value': 'Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7), Arad, Roumanie',
+    'company.address.value': 'Str. Centura Nord Km 541+150 (DN 7), Arad, Roumanie',
     
     // Footer
     'footer.rights': 'Tous droits réservés.',
@@ -387,7 +387,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'company.cui': 'Codice Fiscale (CUI)',
     'company.regcom': 'Registro delle Imprese',
     'company.address': 'Sede Legale',
-    'company.address.value': 'Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7), Arad, Romania',
+    'company.address.value': 'Str. Centura Nord Km 541+150 (DN 7), Arad, Romania',
     
     // Footer
     'footer.rights': 'Tutti i diritti riservati.',
@@ -463,7 +463,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'company.cui': 'ID Fiscal (CUI)',
     'company.regcom': 'Registro Mercantil',
     'company.address': 'Domicilio Social',
-    'company.address.value': 'Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7), Arad, Rumania',
+    'company.address.value': 'Str. Centura Nord Km 541+150 (DN 7), Arad, Rumania',
     
     // Footer
     'footer.rights': 'Todos los derechos reservados.',
@@ -539,7 +539,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'company.cui': 'Daňové ID (CUI)',
     'company.regcom': 'Obchodní Rejstřík',
     'company.address': 'Sídlo Společnosti',
-    'company.address.value': 'Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7), Arad, Rumunsko',
+    'company.address.value': 'Str. Centura Nord Km 541+150 (DN 7), Arad, Rumunsko',
     
     // Footer
     'footer.rights': 'Všechna práva vyhrazena.',
@@ -615,7 +615,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'company.cui': 'NIP (CUI)',
     'company.regcom': 'Rejestr Handlowy',
     'company.address': 'Siedziba Firmy',
-    'company.address.value': 'Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7), Arad, Rumunia',
+    'company.address.value': 'Str. Centura Nord Km 541+150 (DN 7), Arad, Rumunia',
     
     // Footer
     'footer.rights': 'Wszelkie prawa zastrzeżone.',
@@ -691,7 +691,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'company.cui': 'Adószám (CUI)',
     'company.regcom': 'Cégjegyzékszám',
     'company.address': 'Székhely',
-    'company.address.value': 'Str. Centura Nord Km 541+150 Cart. MICALACA (DN 7), Arad, Románia',
+    'company.address.value': 'Str. Centura Nord Km 541+150 (DN 7), Arad, Románia',
     
     // Footer
     'footer.rights': 'Minden jog fenntartva.',
