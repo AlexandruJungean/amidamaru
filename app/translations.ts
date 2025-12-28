@@ -122,7 +122,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'SERVICIILE NOASTRE',
-    'services.subtitle': 'Înțelegem că clienții și partenerii noștri au la rândul lor angajamente față de clienții lor. Cunoaștem importanța termenelor și ne propunem în cadrul fiecărui transport să ne îndeplinim angajamentul față de clienți pentru a le permite acestora să își respecte termenele și contractele.',
+    'services.subtitle': 'Înțelegem că partenerii și clienții noștri au la rândul lor angajamente față de clienții lor. Cunoaștem importanța termenelor și ne propunem în cadrul fiecărui transport să ne îndeplinim angajamentul față de clienți pentru a le permite acestora să își respecte termenele și contractele.',
     'services.ftl.title': 'Transport Complet (FTL)',
     'services.ftl.description': 'Camion complet dedicat mărfii tale. Ideal pentru transporturi mari care necesită transport exclusiv.',
     'services.ltl.title': 'Transport Grupaj (LTL)',
