@@ -41,6 +41,7 @@ function Navigation() {
               width={180}
               height={50}
               className="h-8 md:h-12 w-auto"
+              style={{ width: 'auto', height: 'auto' }}
               priority
             />
           </a>
@@ -217,6 +218,7 @@ function HeroSection() {
           src="/images/IMG_7762.jpg"
           alt="Amidamaru Trucks"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />
@@ -326,6 +328,7 @@ function AboutSection() {
                 src="/images/IMG_7540.jpg"
                 alt="Amidamaru Headquarters"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>
@@ -518,6 +521,7 @@ function FleetSection() {
                 src={image.src}
                 alt={image.alt}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover"
               />
             </div>
@@ -872,6 +876,7 @@ function Footer() {
               width={200}
               height={56}
               className="h-14 w-auto mb-6"
+              style={{ width: 'auto', height: 'auto' }}
             />
             <p className="text-zinc-600 text-sm leading-relaxed max-w-md">
               Transport rutier internațional de mărfuri în toată Europa. 
