@@ -60,9 +60,6 @@ export const metadata: Metadata = {
     },
   },
 
-  // Manifest (icons are auto-detected from /app folder: favicon.ico, apple-touch-icon.png)
-  manifest: "/site.webmanifest",
-
   // Open Graph
   openGraph: {
     type: "website",
