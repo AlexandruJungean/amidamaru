@@ -35,14 +35,10 @@ function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="flex-shrink-0">
-            <Image
+            <img
               src="/logo.png"
               alt="Amidamaru Logo"
-              width={180}
-              height={50}
               className="h-8 md:h-12 w-auto"
-              style={{ width: 'auto', height: 'auto' }}
-              priority
             />
           </a>
 
@@ -870,13 +866,10 @@ function Footer() {
         <div className="grid md:grid-cols-4 gap-12">
           {/* Logo & Description */}
           <div className="md:col-span-2">
-            <Image
+            <img
               src="/logo.png"
               alt="Amidamaru Logo"
-              width={200}
-              height={56}
               className="h-14 w-auto mb-6"
-              style={{ width: 'auto', height: 'auto' }}
             />
             <p className="text-zinc-600 text-sm leading-relaxed max-w-md">
               Transport rutier internațional de mărfuri în toată Europa. 

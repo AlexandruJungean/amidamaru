@@ -37,8 +37,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // About Section
     'about.title': 'ABOUT AMIDAMARU',
-    'about.subtitle': 'The reliable solution for complete road transport',
-    'about.description': 'AMIDAMARU was founded in 2006 and since then we have been providing top quality logistics services for general cargo. We have developed over the years to support a wide range of clients in freight transport throughout Europe. With the support and help of our partners and clients, we increase transport volume every year, responding promptly, seriously and with the highest quality to their requirements and needs.',
+    'about.subtitle': 'We are the reliable solution for complete road transport',
+    'about.description': 'AMIDAMARU was founded in 2006 and since then we have been providing top quality logistics services for general cargo. We have developed over the years to support a wide range of clients in freight transport throughout Europe. With the support and help of our partners and clients, we increase transport volume every year, responding promptly, seriously and with the highest quality to their requirements and needs, forming a strong and operative team both at our headquarters in Arad and on the road, through our professional drivers.',
     'about.experience': 'Years of Experience',
     'about.countries': 'European Countries',
     'about.trucks': 'Modern Trucks',
@@ -46,7 +46,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'OUR SERVICES',
-    'services.subtitle': 'We understand that our clients have commitments to their own customers. We know the importance of deadlines and strive in every transport to fulfill our commitment to clients, allowing them to meet their own deadlines and contracts.',
+    'services.subtitle': 'We understand that our clients and partners have commitments to their own customers. We know the importance of deadlines and strive in every transport to fulfill our commitment to clients, allowing them to meet their own deadlines and contracts to their customers.',
     'services.ftl.title': 'Full Truck Load (FTL)',
     'services.ftl.description': 'Complete truck dedicated to your cargo. Ideal for large shipments requiring exclusive transport.',
     'services.ltl.title': 'Less Than Truck Load (LTL)',
@@ -113,8 +113,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // About Section
     'about.title': 'DESPRE AMIDAMARU',
-    'about.subtitle': 'Soluția sigură pentru transporturi rutiere complete',
-    'about.description': 'Compania AMIDAMARU a fost fondată în anul 2006 și de atunci oferim servicii logistice de cea mai bună calitate pentru mărfuri generale. Ne-am dezvoltat de-a lungul anilor pentru a sprijini o gamă variată de clienți în transportul mărfurilor, în întreaga Europă. Cu susținerea și ajutorul partenerilor și clienților noștri dezvoltăm în fiecare an volumul de transport, răspundem prompt, serios și cu cea mai bună calitate la cerințele și nevoile acestora.',
+    'about.subtitle': 'Noi suntem soluția sigură pentru transporturi rutiere complete',
+    'about.description': 'Compania AMIDAMARU a fost fondată în anul 2006 și de atunci oferim servicii logistice de cea mai bună calitate pentru mărfuri generale. Ne-am dezvoltat de-a lungul anilor pentru a sprijini o gamă variată de clienți în transportul mărfurilor, în întreaga Europă. Cu susținerea și ajutorul partenerilor și clienților noștri dezvoltăm în fiecare an volumul de transport, răspundem prompt, serios și cu cea mai bună calitate la cerințele și nevoile acestora, formând o echipă puternică și operativă atât în cadrul sediului în Arad, cât și localizat, pe drum, prin intermediul șoferilor noștri profesioniști.',
     'about.experience': 'Ani de Experiență',
     'about.countries': 'Țări Europene',
     'about.trucks': 'Camioane Moderne',
@@ -122,7 +122,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'SERVICIILE NOASTRE',
-    'services.subtitle': 'Înțelegem că partenerii și clienții noștri au la rândul lor angajamente față de clienții lor. Cunoaștem importanța termenelor și ne propunem în cadrul fiecărui transport să ne îndeplinim angajamentul față de clienți pentru a le permite acestora să își respecte termenele și contractele.',
+    'services.subtitle': 'Înțelegem că partenerii și clienții noștri au la rândul lor angajamente față de clienții lor. Cunoaștem importanța termenelor și ne propunem în cadrul fiecărui transport să ne îndeplinim angajamentul față de clienți pentru a le permite acestora să își respecte termenele și contractele față de clienții lor.',
     'services.ftl.title': 'Transport Complet (FTL)',
     'services.ftl.description': 'Camion complet dedicat mărfii tale. Ideal pentru transporturi mari care necesită transport exclusiv.',
     'services.ltl.title': 'Transport Grupaj (LTL)',
@@ -189,8 +189,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // About Section
     'about.title': 'ÜBER AMIDAMARU',
-    'about.subtitle': 'Die zuverlässige Lösung für komplette Straßentransporte',
-    'about.description': 'AMIDAMARU wurde 2006 gegründet und bietet seitdem erstklassige Logistikdienstleistungen für allgemeine Güter. Wir haben uns im Laufe der Jahre entwickelt, um eine Vielzahl von Kunden beim Gütertransport in ganz Europa zu unterstützen. Mit der Unterstützung unserer Partner und Kunden steigern wir jedes Jahr das Transportvolumen und reagieren prompt, seriös und mit höchster Qualität auf deren Anforderungen und Bedürfnisse.',
+    'about.subtitle': 'Wir sind die zuverlässige Lösung für komplette Straßentransporte',
+    'about.description': 'AMIDAMARU wurde 2006 gegründet und bietet seitdem erstklassige Logistikdienstleistungen für allgemeine Güter. Wir haben uns im Laufe der Jahre entwickelt, um eine Vielzahl von Kunden beim Gütertransport in ganz Europa zu unterstützen. Mit der Unterstützung unserer Partner und Kunden steigern wir jedes Jahr das Transportvolumen und reagieren prompt, seriös und mit höchster Qualität auf deren Anforderungen und Bedürfnisse, wobei wir ein starkes und operatives Team bilden, sowohl an unserem Hauptsitz in Arad als auch unterwegs durch unsere professionellen Fahrer.',
     'about.experience': 'Jahre Erfahrung',
     'about.countries': 'Europäische Länder',
     'about.trucks': 'Moderne LKWs',
@@ -198,7 +198,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'UNSERE DIENSTLEISTUNGEN',
-    'services.subtitle': 'Wir verstehen, dass unsere Kunden Verpflichtungen gegenüber ihren eigenen Kunden haben. Wir kennen die Bedeutung von Fristen und streben bei jedem Transport danach, unsere Verpflichtungen zu erfüllen, damit unsere Kunden ihre eigenen Termine und Verträge einhalten können.',
+    'services.subtitle': 'Wir verstehen, dass unsere Kunden und Partner Verpflichtungen gegenüber ihren eigenen Kunden haben. Wir kennen die Bedeutung von Fristen und streben bei jedem Transport danach, unsere Verpflichtungen zu erfüllen, damit unsere Kunden ihre eigenen Termine und Verträge gegenüber ihren Kunden einhalten können.',
     'services.ftl.title': 'Komplettladung (FTL)',
     'services.ftl.description': 'Kompletter LKW für Ihre Fracht. Ideal für große Sendungen, die exklusiven Transport erfordern.',
     'services.ltl.title': 'Teilladung (LTL)',
@@ -265,8 +265,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // About Section
     'about.title': 'À PROPOS D\'AMIDAMARU',
-    'about.subtitle': 'La solution fiable pour les transports routiers complets',
-    'about.description': 'AMIDAMARU a été fondée en 2006 et depuis lors, nous fournissons des services logistiques de haute qualité pour les marchandises générales. Nous nous sommes développés au fil des années pour accompagner une grande variété de clients dans le transport de marchandises à travers toute l\'Europe. Avec le soutien de nos partenaires et clients, nous augmentons chaque année notre volume de transport, répondant rapidement, sérieusement et avec la meilleure qualité à leurs exigences et besoins.',
+    'about.subtitle': 'Nous sommes la solution fiable pour les transports routiers complets',
+    'about.description': 'AMIDAMARU a été fondée en 2006 et depuis lors, nous fournissons des services logistiques de haute qualité pour les marchandises générales. Nous nous sommes développés au fil des années pour accompagner une grande variété de clients dans le transport de marchandises à travers toute l\'Europe. Avec le soutien de nos partenaires et clients, nous augmentons chaque année notre volume de transport, répondant rapidement, sérieusement et avec la meilleure qualité à leurs exigences et besoins, formant une équipe forte et opérationnelle tant à notre siège à Arad que sur la route, grâce à nos chauffeurs professionnels.',
     'about.experience': 'Années d\'Expérience',
     'about.countries': 'Pays Européens',
     'about.trucks': 'Camions Modernes',
@@ -274,7 +274,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'NOS SERVICES',
-    'services.subtitle': 'Nous comprenons que nos clients ont des engagements envers leurs propres clients. Nous connaissons l\'importance des délais et nous nous efforçons dans chaque transport de remplir notre engagement envers nos clients pour leur permettre de respecter leurs propres délais et contrats.',
+    'services.subtitle': 'Nous comprenons que nos clients et partenaires ont des engagements envers leurs propres clients. Nous connaissons l\'importance des délais et nous nous efforçons dans chaque transport de remplir notre engagement envers nos clients pour leur permettre de respecter leurs propres délais et contrats envers leurs clients.',
     'services.ftl.title': 'Chargement Complet (FTL)',
     'services.ftl.description': 'Camion complet dédié à votre cargaison. Idéal pour les gros envois nécessitant un transport exclusif.',
     'services.ltl.title': 'Groupage (LTL)',
@@ -341,8 +341,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // About Section
     'about.title': 'CHI È AMIDAMARU',
-    'about.subtitle': 'La soluzione affidabile per trasporti stradali completi',
-    'about.description': 'AMIDAMARU è stata fondata nel 2006 e da allora forniamo servizi logistici di altissima qualità per merci generali. Ci siamo sviluppati nel corso degli anni per supportare una vasta gamma di clienti nel trasporto merci in tutta Europa. Con il supporto dei nostri partner e clienti, aumentiamo ogni anno il volume di trasporto, rispondendo prontamente, seriamente e con la massima qualità alle loro esigenze e necessità.',
+    'about.subtitle': 'Noi siamo la soluzione affidabile per trasporti stradali completi',
+    'about.description': 'AMIDAMARU è stata fondata nel 2006 e da allora forniamo servizi logistici di altissima qualità per merci generali. Ci siamo sviluppati nel corso degli anni per supportare una vasta gamma di clienti nel trasporto merci in tutta Europa. Con il supporto dei nostri partner e clienti, aumentiamo ogni anno il volume di trasporto, rispondendo prontamente, seriamente e con la massima qualità alle loro esigenze e necessità, formando un team forte e operativo sia presso la nostra sede di Arad che su strada, attraverso i nostri autisti professionisti.',
     'about.experience': 'Anni di Esperienza',
     'about.countries': 'Paesi Europei',
     'about.trucks': 'Camion Moderni',
@@ -350,7 +350,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'I NOSTRI SERVIZI',
-    'services.subtitle': 'Comprendiamo che i nostri clienti hanno impegni verso i propri clienti. Conosciamo l\'importanza delle scadenze e ci impegniamo in ogni trasporto a rispettare il nostro impegno verso i clienti per permettere loro di rispettare i propri termini e contratti.',
+    'services.subtitle': 'Comprendiamo che i nostri clienti e partner hanno impegni verso i propri clienti. Conosciamo l\'importanza delle scadenze e ci impegniamo in ogni trasporto a rispettare il nostro impegno verso i clienti per permettere loro di rispettare i propri termini e contratti verso i loro clienti.',
     'services.ftl.title': 'Carico Completo (FTL)',
     'services.ftl.description': 'Camion completo dedicato al vostro carico. Ideale per grandi spedizioni che richiedono trasporto esclusivo.',
     'services.ltl.title': 'Groupage (LTL)',
@@ -417,8 +417,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // About Section
     'about.title': 'SOBRE AMIDAMARU',
-    'about.subtitle': 'La solución segura para transportes por carretera completos',
-    'about.description': 'AMIDAMARU fue fundada en 2006 y desde entonces ofrecemos servicios logísticos de la más alta calidad para mercancías generales. Nos hemos desarrollado a lo largo de los años para apoyar a una amplia gama de clientes en el transporte de mercancías en toda Europa. Con el apoyo de nuestros socios y clientes, aumentamos cada año el volumen de transporte, respondiendo de manera rápida, seria y con la mejor calidad a sus requerimientos y necesidades.',
+    'about.subtitle': 'Nosotros somos la solución segura para transportes por carretera completos',
+    'about.description': 'AMIDAMARU fue fundada en 2006 y desde entonces ofrecemos servicios logísticos de la más alta calidad para mercancías generales. Nos hemos desarrollado a lo largo de los años para apoyar a una amplia gama de clientes en el transporte de mercancías en toda Europa. Con el apoyo de nuestros socios y clientes, aumentamos cada año el volumen de transporte, respondiendo de manera rápida, seria y con la mejor calidad a sus requerimientos y necesidades, formando un equipo fuerte y operativo tanto en nuestra sede de Arad como en la carretera, a través de nuestros conductores profesionales.',
     'about.experience': 'Años de Experiencia',
     'about.countries': 'Países Europeos',
     'about.trucks': 'Camiones Modernos',
@@ -426,7 +426,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'NUESTROS SERVICIOS',
-    'services.subtitle': 'Entendemos que nuestros clientes tienen compromisos con sus propios clientes. Conocemos la importancia de los plazos y nos esforzamos en cada transporte por cumplir nuestro compromiso con los clientes para permitirles cumplir con sus propios plazos y contratos.',
+    'services.subtitle': 'Entendemos que nuestros clientes y socios tienen compromisos con sus propios clientes. Conocemos la importancia de los plazos y nos esforzamos en cada transporte por cumplir nuestro compromiso con los clientes para permitirles cumplir con sus propios plazos y contratos con sus clientes.',
     'services.ftl.title': 'Carga Completa (FTL)',
     'services.ftl.description': 'Camión completo dedicado a su carga. Ideal para envíos grandes que requieren transporte exclusivo.',
     'services.ltl.title': 'Carga Parcial (LTL)',
@@ -493,8 +493,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // About Section
     'about.title': 'O SPOLEČNOSTI AMIDAMARU',
-    'about.subtitle': 'Spolehlivé řešení pro kompletní silniční přepravu',
-    'about.description': 'AMIDAMARU byla založena v roce 2006 a od té doby poskytujeme logistické služby nejvyšší kvality pro všeobecné zboží. V průběhu let jsme se rozvinuli, abychom podpořili širokou škálu klientů v přepravě zboží po celé Evropě. S podporou našich partnerů a klientů každoročně zvyšujeme objem přepravy a reagujeme rychle, seriózně a s nejvyšší kvalitou na jejich požadavky a potřeby.',
+    'about.subtitle': 'My jsme spolehlivé řešení pro kompletní silniční přepravu',
+    'about.description': 'AMIDAMARU byla založena v roce 2006 a od té doby poskytujeme logistické služby nejvyšší kvality pro všeobecné zboží. V průběhu let jsme se rozvinuli, abychom podpořili širokou škálu klientů v přepravě zboží po celé Evropě. S podporou našich partnerů a klientů každoročně zvyšujeme objem přepravy a reagujeme rychle, seriózně a s nejvyšší kvalitou na jejich požadavky a potřeby, přičemž tvoříme silný a operativní tým jak v našem sídle v Aradu, tak na cestách prostřednictvím našich profesionálních řidičů.',
     'about.experience': 'Let Zkušeností',
     'about.countries': 'Evropských Zemí',
     'about.trucks': 'Moderních Kamionů',
@@ -502,7 +502,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'NAŠE SLUŽBY',
-    'services.subtitle': 'Chápeme, že naši klienti mají závazky vůči svým vlastním zákazníkům. Známe důležitost termínů a v každé přepravě se snažíme splnit náš závazek vůči klientům, abychom jim umožnili dodržet jejich vlastní termíny a smlouvy.',
+    'services.subtitle': 'Chápeme, že naši klienti a partneři mají závazky vůči svým vlastním zákazníkům. Známe důležitost termínů a v každé přepravě se snažíme splnit náš závazek vůči klientům, abychom jim umožnili dodržet jejich vlastní termíny a smlouvy vůči jejich zákazníkům.',
     'services.ftl.title': 'Celokamionová Přeprava (FTL)',
     'services.ftl.description': 'Kompletní kamion věnovaný vašemu nákladu. Ideální pro velké zásilky vyžadující exkluzivní přepravu.',
     'services.ltl.title': 'Částečná Přeprava (LTL)',
@@ -569,8 +569,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // About Section
     'about.title': 'O FIRMIE AMIDAMARU',
-    'about.subtitle': 'Pewne rozwiązanie dla kompletnych transportów drogowych',
-    'about.description': 'AMIDAMARU została założona w 2006 roku i od tego czasu świadczymy usługi logistyczne najwyższej jakości dla ładunków ogólnych. Przez lata rozwijaliśmy się, aby wspierać szeroką gamę klientów w transporcie towarów w całej Europie. Dzięki wsparciu naszych partnerów i klientów co roku zwiększamy wolumen transportu, reagując szybko, poważnie i z najwyższą jakością na ich wymagania i potrzeby.',
+    'about.subtitle': 'My jesteśmy pewnym rozwiązaniem dla kompletnych transportów drogowych',
+    'about.description': 'AMIDAMARU została założona w 2006 roku i od tego czasu świadczymy usługi logistyczne najwyższej jakości dla ładunków ogólnych. Przez lata rozwijaliśmy się, aby wspierać szeroką gamę klientów w transporcie towarów w całej Europie. Dzięki wsparciu naszych partnerów i klientów co roku zwiększamy wolumen transportu, reagując szybko, poważnie i z najwyższą jakością na ich wymagania i potrzeby, tworząc silny i operatywny zespół zarówno w naszej siedzibie w Arad, jak i w trasie, za pośrednictwem naszych profesjonalnych kierowców.',
     'about.experience': 'Lat Doświadczenia',
     'about.countries': 'Krajów Europejskich',
     'about.trucks': 'Nowoczesnych Ciężarówek',
@@ -578,7 +578,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'NASZE USŁUGI',
-    'services.subtitle': 'Rozumiemy, że nasi klienci mają zobowiązania wobec swoich własnych klientów. Znamy znaczenie terminów i dążymy w każdym transporcie do wypełnienia naszego zobowiązania wobec klientów, aby umożliwić im dotrzymanie własnych terminów i umów.',
+    'services.subtitle': 'Rozumiemy, że nasi klienci i partnerzy mają zobowiązania wobec swoich własnych klientów. Znamy znaczenie terminów i dążymy w każdym transporcie do wypełnienia naszego zobowiązania wobec klientów, aby umożliwić im dotrzymanie własnych terminów i umów wobec ich klientów.',
     'services.ftl.title': 'Pełny Ładunek (FTL)',
     'services.ftl.description': 'Cała ciężarówka dedykowana Twojemu ładunkowi. Idealne dla dużych przesyłek wymagających transportu na wyłączność.',
     'services.ltl.title': 'Ładunek Częściowy (LTL)',
@@ -645,8 +645,8 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // About Section
     'about.title': 'AZ AMIDAMARU-RÓL',
-    'about.subtitle': 'Megbízható megoldás a teljes közúti szállításhoz',
-    'about.description': 'Az AMIDAMARU 2006-ban alakult, és azóta a legmagasabb minőségű logisztikai szolgáltatásokat nyújtjuk általános áruk szállítására. Az évek során fejlődtünk, hogy az ügyfelek széles körét támogassuk az áruszállításban Európa-szerte. Partnereink és ügyfeleink támogatásával évről évre növeljük a szállítási volument, gyorsan, komolyan és a legmagasabb minőségben reagálva igényeikre és szükségleteikre.',
+    'about.subtitle': 'Mi vagyunk a megbízható megoldás a teljes közúti szállításhoz',
+    'about.description': 'Az AMIDAMARU 2006-ban alakult, és azóta a legmagasabb minőségű logisztikai szolgáltatásokat nyújtjuk általános áruk szállítására. Az évek során fejlődtünk, hogy az ügyfelek széles körét támogassuk az áruszállításban Európa-szerte. Partnereink és ügyfeleink támogatásával évről évre növeljük a szállítási volument, gyorsan, komolyan és a legmagasabb minőségben reagálva igényeikre és szükségleteikre, erős és operatív csapatot alkotva mind az aradi székhelyünkön, mind az úton, profi sofőrjeink révén.',
     'about.experience': 'Év Tapasztalat',
     'about.countries': 'Európai Ország',
     'about.trucks': 'Modern Teherautó',
@@ -654,7 +654,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Services Section
     'services.title': 'SZOLGÁLTATÁSAINK',
-    'services.subtitle': 'Megértjük, hogy ügyfeleinknek kötelezettségeik vannak saját ügyfeleik felé. Ismerjük a határidők fontosságát, és minden szállításnál törekszünk kötelezettségeink teljesítésére, hogy ügyfeleink betarthassák saját határideiket és szerződéseiket.',
+    'services.subtitle': 'Megértjük, hogy ügyfeleinknek és partnereinknek kötelezettségeik vannak saját ügyfeleik felé. Ismerjük a határidők fontosságát, és minden szállításnál törekszünk kötelezettségeink teljesítésére, hogy ügyfeleink betarthassák saját határideiket és szerződéseiket ügyfeleik felé.',
     'services.ftl.title': 'Teljes Rakományú Szállítás (FTL)',
     'services.ftl.description': 'Teljes teherautó az Ön rakományának. Ideális nagy szállítmányokhoz, amelyek kizárólagos szállítást igényelnek.',
     'services.ltl.title': 'Részrakományos Szállítás (LTL)',
