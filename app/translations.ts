@@ -107,14 +107,14 @@ export const translations: Record<Language, Record<string, string>> = {
     // Hero Section
     'hero.title': 'PARTENERUL DUMNEAVOASTRĂ ÎN SERVICII LOGISTICE',
     'hero.subtitle': 'Profesionalism, calitate și seriozitate în transportul mărfurilor',
-    'hero.description': 'AMIDAMARU este partenerul dumneavoastră în servicii logistice integrate cu o expertiză îndelungată în transportul eficient de mărfuri. Suntem un partener de încredere care vă oferă siguranță și eficiență în transportul mărfurilor dumneavoastră, oriunde în Europa.',
+    'hero.description': 'AMIDAMARU este partenerul dumneavoastră în servicii logistice integrate cu o experiență îndelungată în transportul eficient de mărfuri. Suntem un partener de încredere care vă oferă siguranță și eficiență în transportul mărfurilor dumneavoastră, oriunde în Europa.',
     'hero.cta.quote': 'Cere Ofertă',
     'hero.cta.contact': 'Contactează-ne',
     
     // About Section
     'about.title': 'DESPRE AMIDAMARU',
     'about.subtitle': 'Noi suntem soluția sigură pentru transporturi rutiere complete',
-    'about.description': 'Compania AMIDAMARU a fost fondată în anul 2006 și de atunci oferim servicii logistice de cea mai bună calitate pentru mărfuri generale. Ne-am dezvoltat de-a lungul anilor pentru a sprijini o gamă variată de clienți în transportul mărfurilor, în întreaga Europă. Cu susținerea și ajutorul partenerilor și clienților noștri dezvoltăm în fiecare an volumul de transport, răspundem prompt, serios și cu cea mai bună calitate la cerințele și nevoile acestora, formând o echipă puternică și operativă atât în cadrul sediului în Arad, cât și localizat, pe drum, prin intermediul șoferilor noștri profesioniști.',
+    'about.description': 'Compania AMIDAMARU a fost fondată în anul 2006 și de atunci oferim servicii logistice de cea mai bună calitate pentru mărfuri generale. Ne-am dezvoltat de-a lungul anilor pentru a sprijini o gamă variată de clienți în transportul mărfurilor, în întreaga Europă. Cu susținerea și ajutorul partenerilor și clienților noștri dezvoltăm în fiecare an volumul de transport, răspundem prompt, serios și cu cea mai bună calitate la cerințele și nevoile acestora, formând o echipă puternică și operativă atât în cadrul sediului din Arad, cât și localizat, pe drum, prin intermediul șoferilor noștri profesioniști.',
     'about.experience': 'Ani de Experiență',
     'about.countries': 'Țări Europene',
     'about.trucks': 'Camioane Moderne',
