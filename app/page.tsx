@@ -288,7 +288,7 @@ function StatsSection() {
     { number: '20+', label: t('about.experience') },
     { number: '14+', label: t('about.countries') },
     { number: '16+', label: t('about.trucks') },
-    { number: '5000+', label: t('about.deliveries') },
+    { number: '20000+', label: t('about.deliveries') },
   ];
 
   return (
@@ -800,7 +800,7 @@ function ContactSection() {
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1">{t('contact.info.address')}</h3>
-                <p className="text-zinc-600">DN7, Arad<br />România</p>
+                <p className="text-zinc-600">Centura Nord DN7 Km 541+150<br />Arad, România</p>
               </div>
             </div>
 
