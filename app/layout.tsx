@@ -18,11 +18,11 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   // Basic Meta
   title: {
-    default: "AMIDAMARU | Transport Internațional de Mărfuri - Arad, România",
+    default: "AMIDAMARU | Transport Internațional Mărfuri - Arad",
     template: "%s | AMIDAMARU Transport",
   },
   description:
-    "S.C. AMIDAMARU S.R.L. - Transport rutier internațional de mărfuri din Arad, România. Flotă modernă Volvo & Iveco, servicii profesionale în toată Europa. ☎️ +40 728 174 730",
+    "S.C. AMIDAMARU S.R.L. - Transport rutier internațional de mărfuri din Arad, România. Flotă modernă Volvo, servicii profesionale în Europa. ☎️ +40 728 174 730",
   keywords: [
     "transport international",
     "transport marfuri",
