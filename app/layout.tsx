@@ -101,15 +101,7 @@ export const metadata: Metadata = {
   // Other
   metadataBase: new URL("https://amidamaru.ro"),
   alternates: {
-    canonical: "/",
-    languages: {
-      "en": "/en",
-      "ro": "/ro",
-      "de": "/de",
-      "fr": "/fr",
-      "it": "/it",
-      "es": "/es",
-    },
+    canonical: "https://amidamaru.ro/",
   },
 };
 
