@@ -287,7 +287,7 @@ function StatsSection() {
   const stats = [
     { number: '20+', label: t('about.experience') },
     { number: '14+', label: t('about.countries') },
-    { number: '16+', label: t('about.trucks') },
+    { number: '23+', label: t('about.trucks') },
     { number: '20000+', label: t('about.deliveries') },
   ];
 
