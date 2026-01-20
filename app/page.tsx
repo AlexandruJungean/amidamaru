@@ -110,8 +110,8 @@ function Navigation() {
             </div>
 
             {/* CTA Button */}
-            <a href="#contact" className="btn-primary text-sm py-3 px-6">
-              {t('hero.cta.quote')}
+            <a href="#contact" className="btn-primary text-sm py-3 px-6" aria-label={t('hero.cta.quote.nav')}>
+              {t('hero.cta.quote.nav')}
             </a>
           </div>
 
@@ -191,8 +191,9 @@ function Navigation() {
                 href="#contact"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="block mt-4 btn-primary text-center"
+                aria-label={t('hero.cta.quote.nav')}
               >
-                {t('hero.cta.quote')}
+                {t('hero.cta.quote.nav')}
               </a>
             </div>
           </div>
@@ -254,14 +255,14 @@ function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <a href="#contact" className="btn-primary inline-flex items-center justify-center gap-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <a href="#contact" className="btn-primary inline-flex items-center justify-center gap-2" aria-label={t('hero.cta.quote')}>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
               {t('hero.cta.quote')}
             </a>
-            <a href="#about" className="inline-flex items-center justify-center gap-2 bg-transparent text-white px-8 py-4 rounded-lg font-semibold text-lg border-2 border-white/50 hover:bg-white hover:text-zinc-900 transition-all uppercase tracking-wide">
-              {t('hero.cta.contact')}
+            <a href="#about" className="inline-flex items-center justify-center gap-2 bg-transparent text-white px-8 py-4 rounded-lg font-semibold text-lg border-2 border-white/50 hover:bg-white hover:text-zinc-900 transition-all uppercase tracking-wide" aria-label={t('hero.cta.learnMore')}>
+              {t('hero.cta.learnMore')}
             </a>
           </div>
         </div>
@@ -361,9 +362,9 @@ function AboutSection() {
               ))}
             </div>
 
-            <a href="#contact" className="btn-primary inline-flex items-center gap-2">
-              {t('hero.cta.contact')}
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <a href="#contact" className="btn-primary inline-flex items-center gap-2" aria-label={t('about.cta')}>
+              {t('about.cta')}
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>

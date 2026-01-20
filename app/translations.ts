@@ -34,6 +34,9 @@ export const translations: Record<Language, Record<string, string>> = {
     'hero.description': 'AMIDAMARU is your partner in integrated logistics services with extensive expertise in efficient freight transport. We are your trusted partner offering safety and efficiency in transporting your goods anywhere in Europe.',
     'hero.cta.quote': 'Request Quote',
     'hero.cta.contact': 'Contact Us',
+    'hero.cta.quote.nav': 'Get a Quote',
+    'hero.cta.learnMore': 'Learn More About Us',
+    'about.cta': 'Get in Touch',
     
     // About Section
     'about.title': 'ABOUT AMIDAMARU',
@@ -110,6 +113,9 @@ export const translations: Record<Language, Record<string, string>> = {
     'hero.description': 'AMIDAMARU este partenerul dumneavoastră în servicii logistice integrate cu o experiență îndelungată în transportul eficient de mărfuri. Suntem un partener de încredere care vă oferă siguranță și eficiență în transportul mărfurilor dumneavoastră, oriunde în Europa.',
     'hero.cta.quote': 'Cere Ofertă',
     'hero.cta.contact': 'Contactează-ne',
+    'hero.cta.quote.nav': 'Solicită Ofertă',
+    'hero.cta.learnMore': 'Află Mai Multe',
+    'about.cta': 'Ia Legătura',
     
     // About Section
     'about.title': 'DESPRE AMIDAMARU',
@@ -186,6 +192,9 @@ export const translations: Record<Language, Record<string, string>> = {
     'hero.description': 'AMIDAMARU ist Ihr Partner für integrierte Logistikdienstleistungen mit langjähriger Expertise im effizienten Gütertransport. Wir sind Ihr vertrauenswürdiger Partner, der Ihnen Sicherheit und Effizienz beim Transport Ihrer Waren überall in Europa bietet.',
     'hero.cta.quote': 'Angebot Anfordern',
     'hero.cta.contact': 'Kontaktieren Sie Uns',
+    'hero.cta.quote.nav': 'Angebot Einholen',
+    'hero.cta.learnMore': 'Mehr Erfahren',
+    'about.cta': 'Kontakt Aufnehmen',
     
     // About Section
     'about.title': 'ÜBER AMIDAMARU',
@@ -262,6 +271,9 @@ export const translations: Record<Language, Record<string, string>> = {
     'hero.description': 'AMIDAMARU est votre partenaire en services logistiques intégrés avec une expertise approfondie dans le transport efficace de marchandises. Nous sommes votre partenaire de confiance offrant sécurité et efficacité dans le transport de vos marchandises partout en Europe.',
     'hero.cta.quote': 'Demander un Devis',
     'hero.cta.contact': 'Nous Contacter',
+    'hero.cta.quote.nav': 'Obtenir un Devis',
+    'hero.cta.learnMore': 'En Savoir Plus',
+    'about.cta': 'Prendre Contact',
     
     // About Section
     'about.title': 'À PROPOS D\'AMIDAMARU',
@@ -338,6 +350,9 @@ export const translations: Record<Language, Record<string, string>> = {
     'hero.description': 'AMIDAMARU è il vostro partner nei servizi logistici integrati con una vasta esperienza nel trasporto efficiente di merci. Siamo il vostro partner di fiducia che offre sicurezza ed efficienza nel trasporto delle vostre merci ovunque in Europa.',
     'hero.cta.quote': 'Richiedi Preventivo',
     'hero.cta.contact': 'Contattaci',
+    'hero.cta.quote.nav': 'Ottieni Preventivo',
+    'hero.cta.learnMore': 'Scopri di Più',
+    'about.cta': 'Mettiti in Contatto',
     
     // About Section
     'about.title': 'CHI È AMIDAMARU',
@@ -414,6 +429,9 @@ export const translations: Record<Language, Record<string, string>> = {
     'hero.description': 'AMIDAMARU es su socio en servicios logísticos integrados con amplia experiencia en el transporte eficiente de mercancías. Somos su socio de confianza que ofrece seguridad y eficiencia en el transporte de sus mercancías en cualquier lugar de Europa.',
     'hero.cta.quote': 'Solicitar Presupuesto',
     'hero.cta.contact': 'Contáctenos',
+    'hero.cta.quote.nav': 'Pedir Presupuesto',
+    'hero.cta.learnMore': 'Saber Más',
+    'about.cta': 'Ponerse en Contacto',
     
     // About Section
     'about.title': 'SOBRE AMIDAMARU',
@@ -490,6 +508,9 @@ export const translations: Record<Language, Record<string, string>> = {
     'hero.description': 'AMIDAMARU je váš partner v integrovaných logistických službách s rozsáhlými zkušenostmi v efektivní přepravě zboží. Jsme váš důvěryhodný partner nabízející bezpečnost a efektivitu při přepravě vašeho zboží kdekoli v Evropě.',
     'hero.cta.quote': 'Požádat o Nabídku',
     'hero.cta.contact': 'Kontaktujte Nás',
+    'hero.cta.quote.nav': 'Získat Nabídku',
+    'hero.cta.learnMore': 'Zjistit Více',
+    'about.cta': 'Kontaktovat',
     
     // About Section
     'about.title': 'O SPOLEČNOSTI AMIDAMARU',
@@ -566,6 +587,9 @@ export const translations: Record<Language, Record<string, string>> = {
     'hero.description': 'AMIDAMARU jest Twoim partnerem w zintegrowanych usługach logistycznych z wieloletnim doświadczeniem w efektywnym transporcie towarów. Jesteśmy Twoim zaufanym partnerem oferującym bezpieczeństwo i efektywność w transporcie Twoich towarów w całej Europie.',
     'hero.cta.quote': 'Zapytaj o Ofertę',
     'hero.cta.contact': 'Skontaktuj się',
+    'hero.cta.quote.nav': 'Uzyskaj Ofertę',
+    'hero.cta.learnMore': 'Dowiedz się Więcej',
+    'about.cta': 'Nawiąż Kontakt',
     
     // About Section
     'about.title': 'O FIRMIE AMIDAMARU',
@@ -642,6 +666,9 @@ export const translations: Record<Language, Record<string, string>> = {
     'hero.description': 'Az AMIDAMARU az Ön partnere az integrált logisztikai szolgáltatásokban, széleskörű szakértelemmel a hatékony áruszállításban. Megbízható partnerként biztonságot és hatékonyságot kínálunk árui szállításában Európa bármely pontjára.',
     'hero.cta.quote': 'Ajánlatkérés',
     'hero.cta.contact': 'Kapcsolatfelvétel',
+    'hero.cta.quote.nav': 'Árajánlat Kérése',
+    'hero.cta.learnMore': 'Tudjon Meg Többet',
+    'about.cta': 'Vegye Fel a Kapcsolatot',
     
     // About Section
     'about.title': 'AZ AMIDAMARU-RÓL',
