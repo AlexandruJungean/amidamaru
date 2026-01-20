@@ -8,8 +8,8 @@ export interface LanguageInfo {
 }
 
 export const languages: LanguageInfo[] = [
-  { code: 'en', name: 'English', nativeName: 'English', flag: 'gb' },
   { code: 'ro', name: 'Romanian', nativeName: 'Română', flag: 'ro' },
+  { code: 'en', name: 'English', nativeName: 'English', flag: 'gb' },
   { code: 'de', name: 'German', nativeName: 'Deutsch', flag: 'de' },
   { code: 'fr', name: 'French', nativeName: 'Français', flag: 'fr' },
   { code: 'it', name: 'Italian', nativeName: 'Italiano', flag: 'it' },

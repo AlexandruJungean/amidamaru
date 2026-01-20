@@ -129,17 +129,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://amidamaru.ro"),
   alternates: {
     canonical: "https://amidamaru.ro/",
-    languages: {
-      "ro-RO": "https://amidamaru.ro/",
-      "en-US": "https://amidamaru.ro/",
-      "de-DE": "https://amidamaru.ro/",
-      "fr-FR": "https://amidamaru.ro/",
-      "it-IT": "https://amidamaru.ro/",
-      "es-ES": "https://amidamaru.ro/",
-      "cs-CZ": "https://amidamaru.ro/",
-      "pl-PL": "https://amidamaru.ro/",
-      "hu-HU": "https://amidamaru.ro/",
-    },
   },
 
   // Format detection

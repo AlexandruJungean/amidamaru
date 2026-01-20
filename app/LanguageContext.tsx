@@ -14,7 +14,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguageState] = useState<Language>('en');
+  const [language, setLanguageState] = useState<Language>('ro');
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -40,14 +40,15 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const currentLanguageInfo = languages.find(l => l.code === language) || languages[0];
 
   // Prevent hydration mismatch by not rendering until mounted
+  // Use 'ro' as default to match HTML lang attribute for SEO
   if (!mounted) {
     return (
       <LanguageContext.Provider value={{
-        language: 'en',
+        language: 'ro',
         setLanguage: () => {},
-        t: (key: string) => getTranslation('en', key),
+        t: (key: string) => getTranslation('ro', key),
         languages,
-        currentLanguageInfo: languages[0],
+        currentLanguageInfo: languages.find(l => l.code === 'ro') || languages[0],
       }}>
         {children}
       </LanguageContext.Provider>
