@@ -111,7 +111,11 @@ web-amidamaru/
 
 ## 📄 Licență
 
-Proiect privat - Toate drepturile rezervate © 2025 S.C. AMIDAMARU S.R.L.
+**Proprietary License** - Toate drepturile rezervate © 2026 Jungean-Herman Marius-Alexandru
+
+S.C. AMIDAMARU S.R.L. deține drept de utilizare și comercializare asupra acestui website.
+
+Vezi fișierul [LICENSE](LICENSE) pentru detalii complete.
 
 ---
 
