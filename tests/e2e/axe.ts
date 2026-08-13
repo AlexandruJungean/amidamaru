@@ -4,6 +4,17 @@ import { expect, type Page } from "@playwright/test";
 const WCAG_TAGS = ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"];
 
 export async function expectNoAxeViolations(page: Page): Promise<void> {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.addStyleTag({
+    content: `
+      *, *::before, *::after {
+        animation: none !important;
+        animation-delay: 0s !important;
+        transition: none !important;
+      }
+    `,
+  });
+
   const results = await new AxeBuilder({ page }).withTags(WCAG_TAGS).analyze();
   expect(
     results.violations,

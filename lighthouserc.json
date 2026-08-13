@@ -2,9 +2,12 @@
   "ci": {
     "collect": {
       "startServerCommand": "npm run start",
-      "startServerReadyPattern": "Ready",
+      "startServerReadyPattern": "Accepting connections|Serving",
       "url": ["http://127.0.0.1:3000/"],
-      "numberOfRuns": 3
+      "numberOfRuns": 3,
+      "settings": {
+        "chromeFlags": "--no-sandbox --disable-dev-shm-usage --force-prefers-reduced-motion"
+      }
     },
     "assert": {
       "assertions": {

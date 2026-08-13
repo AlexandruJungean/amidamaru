@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
+import React, { createContext, useContext, useCallback, useEffect, useSyncExternalStore } from 'react';
 import { Language, getTranslation, languages, LanguageInfo } from './translations';
 
 interface LanguageContextType {
@@ -13,47 +13,70 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguageState] = useState<Language>('ro');
-  const [mounted, setMounted] = useState(false);
+const LANGUAGE_STORAGE_KEY = 'amidamaru-language';
+const DEFAULT_LANGUAGE: Language = 'ro';
 
-  useEffect(() => {
-    setMounted(true);
-    // Check localStorage for saved language preference
-    const savedLang = localStorage.getItem('amidamaru-language') as Language;
-    if (savedLang && languages.some(l => l.code === savedLang)) {
-      setLanguageState(savedLang);
+function isLanguage(value: string | null): value is Language {
+  return languages.some((item) => item.code === value);
+}
+
+function readStoredLanguage(): Language {
+  try {
+    const saved = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    if (isLanguage(saved)) {
+      return saved;
     }
-  }, []);
+  } catch {
+    // localStorage can be unavailable in restricted browsing contexts
+  }
+  return DEFAULT_LANGUAGE;
+}
+
+const languageListeners = new Set<() => void>();
+
+function subscribeToLanguage(onStoreChange: () => void) {
+  languageListeners.add(onStoreChange);
+  const onStorage = (event: StorageEvent) => {
+    if (event.key === LANGUAGE_STORAGE_KEY || event.key === null) {
+      onStoreChange();
+    }
+  };
+  window.addEventListener('storage', onStorage);
+  return () => {
+    languageListeners.delete(onStoreChange);
+    window.removeEventListener('storage', onStorage);
+  };
+}
+
+function emitLanguageChange() {
+  languageListeners.forEach((listener) => listener());
+}
+
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
+  const language = useSyncExternalStore(
+    subscribeToLanguage,
+    readStoredLanguage,
+    () => DEFAULT_LANGUAGE,
+  );
 
   const setLanguage = useCallback((lang: Language) => {
-    setLanguageState(lang);
-    localStorage.setItem('amidamaru-language', lang);
-    // Update HTML lang attribute
-    document.documentElement.lang = lang;
+    try {
+      window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+    } catch {
+      // Ignore write failures; UI language still updates for this session
+    }
+    emitLanguageChange();
   }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   const t = useCallback((key: string) => {
     return getTranslation(language, key);
   }, [language]);
 
   const currentLanguageInfo = languages.find(l => l.code === language) || languages[0];
-
-  // Prevent hydration mismatch by not rendering until mounted
-  // Use 'ro' as default to match HTML lang attribute for SEO
-  if (!mounted) {
-    return (
-      <LanguageContext.Provider value={{
-        language: 'ro',
-        setLanguage: () => {},
-        t: (key: string) => getTranslation('ro', key),
-        languages,
-        currentLanguageInfo: languages.find(l => l.code === 'ro') || languages[0],
-      }}>
-        {children}
-      </LanguageContext.Provider>
-    );
-  }
 
   return (
     <LanguageContext.Provider value={{
@@ -75,4 +98,3 @@ export function useLanguage() {
   }
   return context;
 }
-
