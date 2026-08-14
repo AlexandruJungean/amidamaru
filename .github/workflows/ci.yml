@@ -9,17 +9,20 @@ permissions:
   contents: read
 
 concurrency:
-  group: ci-${{ github.workflow }}-${{ github.ref }}
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
   quality:
     name: Quality checks
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22
           cache: npm
@@ -30,11 +33,14 @@ jobs:
 
   e2e:
     name: E2E / playwright-axe
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22
           cache: npm
@@ -44,33 +50,51 @@ jobs:
       - run: npm run test:e2e
         env:
           CI: true
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: failure()
         with:
           name: playwright-report
           path: |
             playwright-report/
             test-results/
-          if-no-files-found: ignore
-          retention-days: 7
+            !playwright-report/**/*.zip
+            !test-results/**/*.zip
+            !playwright-report/**/*.har
+            !test-results/**/*.har
+            !playwright-report/**/*.log
+            !test-results/**/*.log
+            !playwright-report/**/*.env
+            !test-results/**/*.env
+            !playwright-report/**/*.db
+            !test-results/**/*.db
+            !playwright-report/**/*.sqlite*
+            !test-results/**/*.sqlite*
+          if-no-files-found: error
+          retention-days: 3
 
   lighthouse:
     name: Lighthouse / public-routes
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-node@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22
           cache: npm
       - run: npm ci
       - run: npm run build
       - run: npm run test:lighthouse
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: always()
         with:
           name: lighthouse-results
-          path: .lighthouseci/
-          if-no-files-found: ignore
-          retention-days: 7
+          path: |
+            .lighthouseci/*.html
+            .lighthouseci/*.json
+          if-no-files-found: error
+          retention-days: 3
+          include-hidden-files: true
